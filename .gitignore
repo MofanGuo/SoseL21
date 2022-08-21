@@ -1,0 +1,5 @@
+# Project exclude paths
+/languages/SoseL21/classes_gen/
+/languages/SoseL21/generator/classes_gen/
+/languages/SoseL21/runtime/classes_gen/
+/solutions/Sosel21.test.interpreter/classes_gen/
