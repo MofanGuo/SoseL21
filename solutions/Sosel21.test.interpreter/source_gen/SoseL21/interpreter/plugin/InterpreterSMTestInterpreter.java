@@ -255,7 +255,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          int referenceValue = ParameterValuesSingleton.getIntegerValues().get(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$N7MS), PROPS.name$MnvL));
+          int referenceValue = AllValues.getIntegerValues().getValue(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$N7MS), PROPS.name$MnvL));
           return referenceValue;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -287,7 +287,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           System.err.println(SPropertyOperations.getString(node, PROPS.name$MnvL));
           System.err.println(SPropertyOperations.getInteger(node, PROPS.value$UGmu));
-          ParameterValuesSingleton.getIntegerValues().set(SPropertyOperations.getString(node, PROPS.name$MnvL), SPropertyOperations.getInteger(node, PROPS.value$UGmu), true);
+          AllValues.getIntegerValues().setValue(SPropertyOperations.getString(node, PROPS.name$MnvL), SPropertyOperations.getInteger(node, PROPS.value$UGmu), true);
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -318,7 +318,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           int value = (int) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.value$WQj4), context, coverage, trace, false);
-          ParameterValuesSingleton.getIntegerValues().set(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.ref$WPP2), LINKS.ref$N7MS), PROPS.name$MnvL), value, false);
+          AllValues.getIntegerValues().setValue(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.ref$WPP2), LINKS.ref$N7MS), PROPS.name$MnvL), value, false);
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -533,8 +533,8 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           boolean value = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.value$$dNu), context, coverage, trace, false);
-          ParameterValues<Boolean> values = ParameterValuesSingleton.getBooleanValues();
-          values.set(SPropertyOperations.getString(node, PROPS.name$MnvL), value, true);
+          AllValues.Value<Boolean> values = AllValues.getBooleanValues();
+          values.setValue(SPropertyOperations.getString(node, PROPS.name$MnvL), value, true);
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -593,9 +593,9 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValues<Boolean> values = ParameterValuesSingleton.getBooleanValues();
+          AllValues.Value<Boolean> values = AllValues.getBooleanValues();
           boolean value = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.value$R_4p), context, coverage, trace, false);
-          values.set(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.ref$RvF2), LINKS.ref$ZtkH), PROPS.name$MnvL), value, false);
+          values.setValue(SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.ref$RvF2), LINKS.ref$ZtkH), PROPS.name$MnvL), value, false);
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -625,8 +625,8 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValues<Boolean> values = ParameterValuesSingleton.getBooleanValues();
-          return values.get(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$ZtkH), PROPS.name$MnvL));
+          AllValues.Value<Boolean> values = AllValues.getBooleanValues();
+          return values.getValue(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$ZtkH), PROPS.name$MnvL));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -655,14 +655,14 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValuesSingleton.enterScope();
+          AllValues.enterScope();
           boolean condition = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.cond$VcD6), context, coverage, trace, false);
           while (condition) {
             for (SNode statementContent : SLinkOperations.getChildren(node, LINKS.body$Vi2t)) {
               context.getRootInterpreter().evaluate(statementContent, context, coverage, trace, false);
             }
           }
-          ParameterValuesSingleton.exitScope();
+          AllValues.exitScope();
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -692,7 +692,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValuesSingleton.enterScope();
+          AllValues.enterScope();
           boolean condition = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.cond$JA5q), context, coverage, trace, false);
           if (condition) {
             for (SNode statementContent : SLinkOperations.getChildren(node, LINKS.if$JAzs)) {
@@ -703,7 +703,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
               context.getRootInterpreter().evaluate(statementContent, context, coverage, trace, false);
             }
           }
-          ParameterValuesSingleton.exitScope();
+          AllValues.exitScope();
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -733,7 +733,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValuesSingleton.enterScope();
+          AllValues.enterScope();
           context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.int$G$dq), context, coverage, trace, false);
           boolean condition = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.bool$G_9u), context, coverage, trace, false);
           while (condition) {
@@ -743,7 +743,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
             context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.increment$GELQ), context, coverage, trace, false);
             condition = ((boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.bool$G_9u), context, coverage, trace, false));
           }
-          ParameterValuesSingleton.exitScope();
+          AllValues.exitScope();
           return 0;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -773,9 +773,9 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValues<Integer> intValues = ParameterValuesSingleton.getIntegerValues();
-          ParameterValues<Boolean> booleanValues = ParameterValuesSingleton.getBooleanValues();
-          ParameterValuesSingleton.enterFunctionCall();
+          AllValues.Value<Integer> intValues = AllValues.getIntegerValues();
+          AllValues.Value<Boolean> booleanValues = AllValues.getBooleanValues();
+          AllValues.enterFunctionCall();
           Iterator<String> names = ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.func$D2o4), LINKS.params$E8mA)).select(new ISelector<SNode, String>() {
             public String select(SNode it) {
               return SPropertyOperations.getString(it, PROPS.name$MnvL);
@@ -784,16 +784,16 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           for (SNode declaration : SLinkOperations.getChildren(node, LINKS.values$D1U2)) {
             if (SNodeOperations.isInstanceOf(declaration, CONCEPTS.DeclarationBool$EG)) {
               SNode paramBool = (SNode) declaration;
-              booleanValues.setFunctionParameter(names.next(), SPropertyOperations.getBoolean(paramBool, PROPS.value$ixaw));
+              booleanValues.setParam(names.next(), SPropertyOperations.getBoolean(paramBool, PROPS.value$ixaw));
             }
             if (SNodeOperations.isInstanceOf(declaration, CONCEPTS.DeclarationInteger$ic)) {
               SNode paramInteger = (SNode) declaration;
-              intValues.setFunctionParameter(names.next(), SPropertyOperations.getInteger(paramInteger, PROPS.value$DTPP));
+              intValues.setParam(names.next(), SPropertyOperations.getInteger(paramInteger, PROPS.value$DTPP));
             }
           }
-          ParameterValuesSingleton.CALLING_FUNCTION = true;
+          AllValues.CALLING_FUNCTION = true;
           Object reObject = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.func$D2o4), context, coverage, trace, false);
-          ParameterValuesSingleton.exitFunctionCall();
+          AllValues.exitFunctionCall();
           return reObject;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -823,10 +823,10 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          if (!(ParameterValuesSingleton.CALLING_FUNCTION)) {
+          if (!(AllValues.CALLING_FUNCTION)) {
             return 0;
           }
-          ParameterValuesSingleton.CALLING_FUNCTION = false;
+          AllValues.CALLING_FUNCTION = false;
           for (SNode statementContent : SLinkOperations.getChildren(node, LINKS.body$NLRI)) {
             context.getRootInterpreter().evaluate(statementContent, context, coverage, trace, false);
           }
@@ -859,7 +859,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return ParameterValuesSingleton.getIntegerValues().getFunctionParameter(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$mdbw), PROPS.name$MnvL));
+          return AllValues.getIntegerValues().getParam(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$mdbw), PROPS.name$MnvL));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -888,7 +888,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return ParameterValuesSingleton.getBooleanValues().getFunctionParameter(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$qSh0), PROPS.name$MnvL));
+          return AllValues.getBooleanValues().getParam(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$qSh0), PROPS.name$MnvL));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {

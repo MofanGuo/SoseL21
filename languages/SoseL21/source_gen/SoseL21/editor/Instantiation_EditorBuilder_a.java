@@ -76,6 +76,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createRefNodeList_0());
     editorCell.addEditorCell(createConstant_3());
+    editorCell.addEditorCell(createConstant_4());
     return editorCell;
   }
   private EditorCell createRefCell_0() {
@@ -378,6 +379,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
     editorCell.setCellId("Constant_54web3_h0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_4() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
+    editorCell.setCellId("Constant_54web3_i0");
     editorCell.setDefaultText("");
     return editorCell;
   }

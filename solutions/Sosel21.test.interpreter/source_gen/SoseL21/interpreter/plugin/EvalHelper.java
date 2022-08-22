@@ -12,8 +12,8 @@ public class EvalHelper {
   private static InterpreterEvaluationHelper helper = new InterpreterEvaluationHelper("arithmetic");
   public static String eval(SNode n) {
     try {
-      ParameterValuesSingleton.getIntegerValues().clear();
-      ParameterValuesSingleton.getBooleanValues().clear();
+      AllValues.getIntegerValues().empty();
+      AllValues.getBooleanValues().empty();
       helper.evaluate(SNodeOperations.getNodeAncestor(n, CONCEPTS.SoSeWorksheet$t7, false, false));
       Object result = helper.evaluate(n);
       if (result != null) {
