@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAssertion = createDescriptorForAssertion();
   /*package*/ final ConceptDescriptor myConceptAssignBoolean = createDescriptorForAssignBoolean();
   /*package*/ final ConceptDescriptor myConceptAssignInteger = createDescriptorForAssignInteger();
   /*package*/ final ConceptDescriptor myConceptBinaryBoolean = createDescriptorForBinaryBoolean();
@@ -58,6 +59,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptReferIntegerParam = createDescriptorForReferIntegerParam();
   /*package*/ final ConceptDescriptor myConceptReturn = createDescriptorForReturn();
   /*package*/ final ConceptDescriptor myConceptSoSeWorksheet = createDescriptorForSoSeWorksheet();
+  /*package*/ final ConceptDescriptor myConceptTestSuite = createDescriptorForTestSuite();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
   /*package*/ final ConceptDescriptor myConceptWhile = createDescriptorForWhile();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -74,13 +76,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAssignBoolean, myConceptAssignInteger, myConceptBinaryBoolean, myConceptBinaryInteger, myConceptBolleanReturn, myConceptBoolean, myConceptBooleanExpression, myConceptBooleanParam, myConceptBooleanReference, myConceptBooleanResult, myConceptCallFunction, myConceptClass, myConceptConstructor, myConceptDeclaration, myConceptDeclarationBool, myConceptDeclarationInteger, myConceptDivide, myConceptExpression, myConceptExpressionState, myConceptFor, myConceptFunction, myConceptGreater, myConceptGreaterEqual, myConceptIBlock, myConceptIStatementContent, myConceptIfElse, myConceptInstantiation, myConceptInteger, myConceptIntegerExpression, myConceptIntegerParam, myConceptIntegerReference, myConceptIntegerReturn, myConceptLess, myConceptLessEqual, myConceptMinus, myConceptMultiply, myConceptNotEqual, myConceptNumberResult, myConceptParameter, myConceptParenExpression, myConceptPlus, myConceptReferBooleanParam, myConceptReferIntegerParam, myConceptReturn, myConceptSoSeWorksheet, myConceptVariable, myConceptWhile);
+    return Arrays.asList(myConceptAssertion, myConceptAssignBoolean, myConceptAssignInteger, myConceptBinaryBoolean, myConceptBinaryInteger, myConceptBolleanReturn, myConceptBoolean, myConceptBooleanExpression, myConceptBooleanParam, myConceptBooleanReference, myConceptBooleanResult, myConceptCallFunction, myConceptClass, myConceptConstructor, myConceptDeclaration, myConceptDeclarationBool, myConceptDeclarationInteger, myConceptDivide, myConceptExpression, myConceptExpressionState, myConceptFor, myConceptFunction, myConceptGreater, myConceptGreaterEqual, myConceptIBlock, myConceptIStatementContent, myConceptIfElse, myConceptInstantiation, myConceptInteger, myConceptIntegerExpression, myConceptIntegerParam, myConceptIntegerReference, myConceptIntegerReturn, myConceptLess, myConceptLessEqual, myConceptMinus, myConceptMultiply, myConceptNotEqual, myConceptNumberResult, myConceptParameter, myConceptParenExpression, myConceptPlus, myConceptReferBooleanParam, myConceptReferIntegerParam, myConceptReturn, myConceptSoSeWorksheet, myConceptTestSuite, myConceptVariable, myConceptWhile);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Assertion:
+        return myConceptAssertion;
       case LanguageConceptSwitch.AssignBoolean:
         return myConceptAssignBoolean;
       case LanguageConceptSwitch.AssignInteger:
@@ -171,6 +175,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptReturn;
       case LanguageConceptSwitch.SoSeWorksheet:
         return myConceptSoSeWorksheet;
+      case LanguageConceptSwitch.TestSuite:
+        return myConceptTestSuite;
       case LanguageConceptSwitch.Variable:
         return myConceptVariable;
       case LanguageConceptSwitch.While:
@@ -185,6 +191,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAssertion() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Assertion", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3b001b0bbabed2c2L);
+    b.class_(false, false, false);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/4251427785429406402");
+    b.version(2);
+    b.aggregate("value", 0x3b001b0bbabed2e3L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e5f49L).optional(false).ordered(true).multiple(false).origin("4251427785429406435").done();
+    b.aggregate("funtion", 0x3b001b0bbabed2e5L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9437780L).optional(false).ordered(true).multiple(false).origin("4251427785429406437").done();
+    b.alias("assert");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAssignBoolean() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "AssignBoolean", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed673d8ffL);
     b.class_(false, false, false);
@@ -292,7 +308,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForClass() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Class", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347ba80ccL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827342441");
@@ -607,6 +623,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/863866993298603266");
     b.version(2);
     b.aggregate("contents", 0xbfd127414bf7d05L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL).optional(true).ordered(true).multiple(true).origin("863866993298603269").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTestSuite() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "TestSuite", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3b001b0bbabecf48L);
+    b.class_(false, false, true);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/4251427785429405512");
+    b.version(2);
+    b.aggregate("assertion", 0x3b001b0bbabf0636L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3b001b0bbabed2c2L).optional(true).ordered(true).multiple(true).origin("4251427785429419574").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVariable() {

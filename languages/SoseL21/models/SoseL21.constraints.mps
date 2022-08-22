@@ -599,5 +599,59 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3G06KIUJHzq">
+    <property role="3GE5qa" value="test" />
+    <ref role="1M2myG" to="b5gf:3G06KIUJHb2" resolve="Assertion" />
+    <node concept="9SLcT" id="3G06KIUJHzr" role="9SGkU">
+      <node concept="3clFbS" id="3G06KIUJHzs" role="2VODD2">
+        <node concept="Jncv_" id="3G06KIUJHBq" role="3cqZAp">
+          <ref role="JncvD" to="b5gf:7wMoUFpgRu0" resolve="CallFunction" />
+          <node concept="2H4GUG" id="3G06KIUJHC2" role="JncvB" />
+          <node concept="3clFbS" id="3G06KIUJHBs" role="Jncv$">
+            <node concept="3cpWs8" id="3G06KIUJHHz" role="3cqZAp">
+              <node concept="3cpWsn" id="3G06KIUJHHA" role="3cpWs9">
+                <property role="TrG5h" value="function" />
+                <node concept="3Tqbb2" id="3G06KIUJHHy" role="1tU5fm">
+                  <ref role="ehGHo" to="b5gf:7wMoUFpfEE$" resolve="Function" />
+                </node>
+                <node concept="2OqwBi" id="3G06KIUJI0Z" role="33vP2m">
+                  <node concept="Jnkvi" id="3G06KIUJHMS" role="2Oq$k0">
+                    <ref role="1M0zk5" node="3G06KIUJHBt" resolve="callFunction" />
+                  </node>
+                  <node concept="3TrEf2" id="3G06KIUJIrO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="b5gf:7wMoUFpgRu5" resolve="func" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3G06KIUJIZH" role="3cqZAp">
+              <node concept="3clFbS" id="3G06KIUJIZJ" role="3clFbx">
+                <node concept="3cpWs6" id="3G06KIUJJHr" role="3cqZAp">
+                  <node concept="3clFbT" id="3G06KIUJJLQ" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3G06KIUJJaP" role="3clFbw">
+                <node concept="37vLTw" id="3G06KIUJJ5K" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3G06KIUJHHA" resolve="function" />
+                </node>
+                <node concept="3TrcHB" id="3G06KIUJJEp" role="2OqNvi">
+                  <ref role="3TsBF5" to="b5gf:7wMoUFpfEOs" resolve="nonpure" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="3G06KIUJHBt" role="JncvA">
+            <property role="TrG5h" value="callFunction" />
+            <node concept="2jxLKc" id="3G06KIUJHBu" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3G06KIUJJNa" role="3cqZAp">
+          <node concept="3clFbT" id="3G06KIUJJSo" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

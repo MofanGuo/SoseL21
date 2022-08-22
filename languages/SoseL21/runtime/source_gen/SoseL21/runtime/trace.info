@@ -20,13 +20,23 @@
   </root>
   <root nodeRef="r:a97b26ad-3680-4d03-9b3d-da316f75e7a5(SoseL21.runtime)/8661094618825043540">
     <file name="map_toJavaCode.java">
-      <node id="8661094618825043557" at="7,0,8,0" concept="0" trace="nn" />
-      <node id="8661094618825043605" at="8,0,9,0" concept="0" />
-      <node id="8661094618825625366" at="9,0,10,0" concept="0" />
-      <node id="8661094618825043557" at="10,0,11,0" concept="0" trace="nn" />
-      <node id="8661094618825043605" at="11,0,12,0" concept="0" />
-      <node id="8661094618825625366" at="12,0,13,0" concept="0" />
-      <unit id="8661094618825043540" at="6,0,15,0" name="SoseL21.runtime.map_toJavaCode" />
+      <node id="4251427785429923179" at="7,0,8,0" concept="0" trace="test_int_1" />
+      <node id="4251427785429923198" at="8,0,9,0" concept="0" trace="test_int_2" />
+      <node id="4251427785429923220" at="9,0,10,0" concept="0" trace="test_bool" />
+      <node id="4251427785429923440" at="10,0,11,0" concept="0" />
+      <node id="4251427785429924076" at="11,0,12,0" concept="0" />
+      <node id="4251427785429924293" at="12,0,13,0" concept="0" trace="add" />
+      <node id="4251427785429924395" at="13,0,14,0" concept="0" trace="sumUtil" />
+      <node id="4251427785429929634" at="14,0,15,0" concept="0" trace="or" />
+      <node id="4251427785429923179" at="15,0,16,0" concept="0" trace="test_int_1" />
+      <node id="4251427785429923198" at="16,0,17,0" concept="0" trace="test_int_2" />
+      <node id="4251427785429923220" at="17,0,18,0" concept="0" trace="test_bool" />
+      <node id="4251427785429923440" at="18,0,19,0" concept="0" />
+      <node id="4251427785429924076" at="19,0,20,0" concept="0" />
+      <node id="4251427785429924293" at="20,0,21,0" concept="0" trace="add" />
+      <node id="4251427785429924395" at="21,0,22,0" concept="0" trace="sumUtil" />
+      <node id="4251427785429929634" at="22,0,23,0" concept="0" trace="or" />
+      <unit id="8661094618825043540" at="6,0,25,0" name="SoseL21.runtime.map_toJavaCode" />
     </file>
   </root>
 </debug-info>

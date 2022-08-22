@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Assertion;
   private ConceptPresentation props_AssignBoolean;
   private ConceptPresentation props_AssignInteger;
   private ConceptPresentation props_BinaryBoolean;
@@ -54,6 +55,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ReferIntegerParam;
   private ConceptPresentation props_Return;
   private ConceptPresentation props_SoSeWorksheet;
+  private ConceptPresentation props_TestSuite;
   private ConceptPresentation props_Variable;
   private ConceptPresentation props_While;
 
@@ -62,6 +64,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Assertion:
+        if (props_Assertion == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("assert");
+          props_Assertion = cpb.create();
+        }
+        return props_Assertion;
       case LanguageConceptSwitch.AssignBoolean:
         if (props_AssignBoolean == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -369,6 +378,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SoSeWorksheet = cpb.create();
         }
         return props_SoSeWorksheet;
+      case LanguageConceptSwitch.TestSuite:
+        if (props_TestSuite == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TestSuite");
+          props_TestSuite = cpb.create();
+        }
+        return props_TestSuite;
       case LanguageConceptSwitch.Variable:
         if (props_Variable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
