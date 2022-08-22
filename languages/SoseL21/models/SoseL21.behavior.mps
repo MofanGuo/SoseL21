@@ -287,11 +287,11 @@
     <node concept="3Tm1VV" id="7wMoUFp3GQd" role="1B3o_S" />
     <node concept="QsSxf" id="7wMoUFp3GUY" role="Qtgdg">
       <property role="TrG5h" value="Boolean" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="QsSxf" id="7wMoUFp3GW$" role="Qtgdg">
       <property role="TrG5h" value="Integer" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
   </node>
   <node concept="13h7C7" id="7wMoUFp3H9I">

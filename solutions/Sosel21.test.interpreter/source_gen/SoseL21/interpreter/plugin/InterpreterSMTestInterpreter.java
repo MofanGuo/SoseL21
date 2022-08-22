@@ -733,7 +733,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          ParameterValues<Integer> intV = ParameterValuesSingleton.getIntegerValues();
+          ParameterValuesSingleton.enterScope();
           context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.int$G$dq), context, coverage, trace, false);
           boolean condition = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.bool$G_9u), context, coverage, trace, false);
           while (condition) {
@@ -775,6 +775,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           ParameterValues<Integer> intValues = ParameterValuesSingleton.getIntegerValues();
           ParameterValues<Boolean> booleanValues = ParameterValuesSingleton.getBooleanValues();
+          ParameterValuesSingleton.enterFunctionCall();
           Iterator<String> names = ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.func$D2o4), LINKS.params$E8mA)).select(new ISelector<SNode, String>() {
             public String select(SNode it) {
               return SPropertyOperations.getString(it, PROPS.name$MnvL);
@@ -799,7 +800,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("CallFunction()", node, ex, trace);
+          throw new InterpreterRuntimeException("callFunction()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {

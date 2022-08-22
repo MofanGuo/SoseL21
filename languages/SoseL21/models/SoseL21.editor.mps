@@ -101,6 +101,7 @@
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -723,8 +724,8 @@
     <property role="3GE5qa" value="test" />
     <ref role="1XX52x" to="b5gf:3G06KIUJHb2" resolve="Assertion" />
     <node concept="3EZMnI" id="3G06KIULHyK" role="2wV5jI">
-      <node concept="PMmxH" id="3G06KIULHyR" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="3F0ifn" id="2UfX7RQZcMJ" role="3EZMnx">
+        <property role="3F0ifm" value="assert" />
       </node>
       <node concept="3F1sOY" id="3G06KIULHK8" role="3EZMnx">
         <ref role="1NtTu8" to="b5gf:3G06KIUJHb_" resolve="funtion" />
@@ -753,6 +754,63 @@
         </node>
       </node>
       <node concept="2iRfu4" id="3G06KIULHyN" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2UfX7RQVUfC">
+    <property role="3GE5qa" value="expressions.func" />
+    <ref role="1XX52x" to="b5gf:7wMoUFpfEE$" resolve="Function" />
+    <node concept="3EZMnI" id="2UfX7RQVUfH" role="2wV5jI">
+      <node concept="3EZMnI" id="2UfX7RQVUfO" role="3EZMnx">
+        <node concept="VPM3Z" id="2UfX7RQVUfQ" role="3F10Kt" />
+        <node concept="PMmxH" id="2UfX7RQVUfY" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="1kHk_G" id="2UfX7RQVUg7" role="3EZMnx">
+          <ref role="1NtTu8" to="b5gf:7wMoUFpfEOs" resolve="nonpure" />
+        </node>
+        <node concept="3F0A7n" id="2UfX7RQVUgk" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2UfX7RQVUgu" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="2iRfu4" id="2UfX7RQVUfT" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2UfX7RQVUgH" role="3EZMnx">
+        <node concept="VPM3Z" id="2UfX7RQVUgJ" role="3F10Kt" />
+        <node concept="3F0ifn" id="2UfX7RQVUh8" role="3EZMnx">
+          <property role="3F0ifm" value="(" />
+        </node>
+        <node concept="3F2HdR" id="2UfX7RQVUgZ" role="3EZMnx">
+          <ref role="1NtTu8" to="b5gf:7wMoUFpfEOu" resolve="params" />
+          <node concept="l2Vlx" id="2UfX7RQVUh1" role="2czzBx" />
+        </node>
+        <node concept="l2Vlx" id="2UfX7RQVUgM" role="2iSdaV" />
+        <node concept="3F0ifn" id="2UfX7RQVUho" role="3EZMnx">
+          <property role="3F0ifm" value="):" />
+        </node>
+        <node concept="3F1sOY" id="2UfX7RQVUhF" role="3EZMnx">
+          <ref role="1NtTu8" to="b5gf:7wMoUFpfERY" resolve="funcReturn" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2UfX7RQVUi3" role="3EZMnx">
+        <ref role="1NtTu8" to="b5gf:7wMoUFpfERR" resolve="body" />
+        <node concept="2iRkQZ" id="2UfX7RQVUi5" role="2czzBx" />
+      </node>
+      <node concept="3EZMnI" id="2UfX7RQVUjH" role="3EZMnx">
+        <node concept="VPM3Z" id="2UfX7RQVUjJ" role="3F10Kt" />
+        <node concept="3F0ifn" id="2UfX7RQVUka" role="3EZMnx">
+          <property role="3F0ifm" value="returen" />
+        </node>
+        <node concept="3F1sOY" id="2UfX7RQVUkk" role="3EZMnx">
+          <ref role="1NtTu8" to="b5gf:7wMoUFpfERU" resolve="funcValue" />
+        </node>
+        <node concept="l2Vlx" id="2UfX7RQVUjM" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="2UfX7RQVUkL" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRkQZ" id="2UfX7RQVUfK" role="2iSdaV" />
     </node>
   </node>
 </model>

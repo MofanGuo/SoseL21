@@ -198,7 +198,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("value", 0x3b001b0bbabed2e3L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e5f49L).optional(false).ordered(true).multiple(false).origin("4251427785429406435").done();
     b.aggregate("funtion", 0x3b001b0bbabed2e5L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9437780L).optional(false).ordered(true).multiple(false).origin("4251427785429406437").done();
-    b.alias("assert");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAssignBoolean() {
@@ -304,6 +303,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("func", 0x783263aad9437785L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L).optional(false).origin("8661094618827552645").done();
     b.aggregate("values", 0x783263aad9437783L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L).optional(true).ordered(true).multiple(true).origin("8661094618827552643").done();
+    b.alias("callFunction");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForClass() {
