@@ -50,7 +50,7 @@ public final class Assertion__BehaviorDescriptor extends BaseBHDescriptor {
     LoggingRuntime.logMsgView(Level.DEBUG, "Result: " + result, Assertion__BehaviorDescriptor.class, null, null);
     LoggingRuntime.logMsgView(Level.DEBUG, "Expecting Result: " + compareResult, Assertion__BehaviorDescriptor.class, null, null);
     if (result == compareResult) {
-      return "correct";
+      return "Correct->" + "result:" + result + "    with expecting result:" + compareResult;
     }
     return "wrong";
   }

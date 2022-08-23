@@ -159,7 +159,7 @@
   </node>
   <node concept="1TIwiD" id="40Wy3B2Vs$$">
     <property role="EcuMT" value="4628724298694904100" />
-    <property role="TrG5h" value="ExpressionState" />
+    <property role="TrG5h" value="ExpressionStatementContent" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="40Wy3B2Vs$_" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />

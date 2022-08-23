@@ -1160,8 +1160,28 @@
         <node concept="3clFbJ" id="3G06KIUK1ZP" role="3cqZAp">
           <node concept="3clFbS" id="3G06KIUK1ZR" role="3clFbx">
             <node concept="3cpWs6" id="3G06KIUK2Tq" role="3cqZAp">
-              <node concept="Xl_RD" id="3G06KIUK2Xa" role="3cqZAk">
-                <property role="Xl_RC" value="correct" />
+              <node concept="3cpWs3" id="7UXyvJJMIJb" role="3cqZAk">
+                <node concept="37vLTw" id="7UXyvJJMINX" role="3uHU7w">
+                  <ref role="3cqZAo" node="3G06KIUJWgF" resolve="compareResult" />
+                </node>
+                <node concept="3cpWs3" id="7UXyvJJMHCt" role="3uHU7B">
+                  <node concept="3cpWs3" id="7UXyvJJMHsh" role="3uHU7B">
+                    <node concept="3cpWs3" id="7UXyvJJMFME" role="3uHU7B">
+                      <node concept="Xl_RD" id="3G06KIUK2Xa" role="3uHU7B">
+                        <property role="Xl_RC" value="Correct-&gt;" />
+                      </node>
+                      <node concept="Xl_RD" id="7UXyvJJMFQA" role="3uHU7w">
+                        <property role="Xl_RC" value="result:" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="7UXyvJJMHwI" role="3uHU7w">
+                      <ref role="3cqZAo" node="3G06KIUJUJZ" resolve="result" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="7UXyvJJMHGP" role="3uHU7w">
+                    <property role="Xl_RC" value="    with expecting result:" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

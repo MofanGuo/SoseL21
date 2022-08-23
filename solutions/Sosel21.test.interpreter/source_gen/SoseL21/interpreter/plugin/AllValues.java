@@ -6,46 +6,50 @@ import java.util.LinkedList;
 import java.util.HashMap;
 
 public class AllValues {
-  private static Value<Integer> INT_VALUES;
-  private static Value<Boolean> BOOL_VALUES;
-  public static Boolean CALLING_FUNCTION = false;
 
-  public static Value<Integer> getIntegerValues() {
-    if (INT_VALUES == null) {
+  public static void addValue() {
+    INT.addValue();
+    BOOL.addValue();
+  }
+
+  public static void removeValue() {
+    INT.removeValue();
+    BOOL.removeValue();
+  }
+
+  public static Value<Integer> findInt() {
+    if (INT == null) {
       Value<Integer> val1 = new Value<Integer>();
-      INT_VALUES = new Value<Integer>();
+      INT = new Value<Integer>();
+      return INT;
+    } else {
+      return INT;
     }
-
-    return INT_VALUES;
   }
 
-  public static Value<Boolean> getBooleanValues() {
-    if (BOOL_VALUES == null) {
-      BOOL_VALUES = new Value<Boolean>();
+  public static Value<Boolean> findBool() {
+    if (BOOL == null) {
+      BOOL = new Value<Boolean>();
+      return BOOL;
+    } else {
+      return BOOL;
     }
-
-    return BOOL_VALUES;
   }
 
-  public static void enterFunctionCall() {
-    INT_VALUES.valuesCall();
-    BOOL_VALUES.valuesCall();
-    AllValues.enterScope();
+  protected static Value<Integer> INT;
+  protected static Value<Boolean> BOOL;
+  public static Boolean IS_CALLING = false;
+
+  public static void allValuesCall() {
+    INT.valuesCall();
+    BOOL.valuesCall();
+    AllValues.addValue();
   }
 
-  public static void exitFunctionCall() {
-    INT_VALUES.stopValuesCall();
-    BOOL_VALUES.stopValuesCall();
-    AllValues.exitScope();
-  }
-  public static void enterScope() {
-    AllValues.INT_VALUES.addValue();
-    AllValues.BOOL_VALUES.addValue();
-  }
-
-  public static void exitScope() {
-    AllValues.INT_VALUES.removeValue();
-    AllValues.BOOL_VALUES.removeValue();
+  public static void stopAllValuesCall() {
+    INT.stopValuesCall();
+    BOOL.stopValuesCall();
+    AllValues.removeValue();
   }
 
   public static class Value<T> {

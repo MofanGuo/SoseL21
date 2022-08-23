@@ -22,7 +22,7 @@ public class check_SoSeWorksheet_NonTypesystemRule extends AbstractNonTypesystem
   public check_SoSeWorksheet_NonTypesystemRule() {
   }
   public void applyRule(final SNode ws, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    Iterable<SNode> expr = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(ws), CONCEPTS.ExpressionState$5s)).select(new ISelector<SNode, SNode>() {
+    Iterable<SNode> expr = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getChildren(ws), CONCEPTS.ExpressionStatementContent$5s)).select(new ISelector<SNode, SNode>() {
       public SNode select(SNode it) {
         return ListSequence.fromList(SNodeOperations.getChildren(it)).getElement(0);
       }
@@ -47,7 +47,7 @@ public class check_SoSeWorksheet_NonTypesystemRule extends AbstractNonTypesystem
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept ExpressionState$5s = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, "SoseL21.structure.ExpressionState");
+    /*package*/ static final SConcept ExpressionStatementContent$5s = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, "SoseL21.structure.ExpressionStatementContent");
     /*package*/ static final SConcept IntegerReference$_E = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, "SoseL21.structure.IntegerReference");
     /*package*/ static final SConcept BooleanReference$SX = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, "SoseL21.structure.BooleanReference");
     /*package*/ static final SConcept SoSeWorksheet$t7 = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7d02L, "SoseL21.structure.SoSeWorksheet");

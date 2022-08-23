@@ -32,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDeclarationInteger = createDescriptorForDeclarationInteger();
   /*package*/ final ConceptDescriptor myConceptDivide = createDescriptorForDivide();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
-  /*package*/ final ConceptDescriptor myConceptExpressionState = createDescriptorForExpressionState();
+  /*package*/ final ConceptDescriptor myConceptExpressionStatementContent = createDescriptorForExpressionStatementContent();
   /*package*/ final ConceptDescriptor myConceptFor = createDescriptorForFor();
   /*package*/ final ConceptDescriptor myConceptFunction = createDescriptorForFunction();
   /*package*/ final ConceptDescriptor myConceptGreater = createDescriptorForGreater();
@@ -76,7 +76,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAssertion, myConceptAssignBoolean, myConceptAssignInteger, myConceptBinaryBoolean, myConceptBinaryInteger, myConceptBolleanReturn, myConceptBoolean, myConceptBooleanExpression, myConceptBooleanParam, myConceptBooleanReference, myConceptBooleanResult, myConceptCallFunction, myConceptClass, myConceptConstructor, myConceptDeclaration, myConceptDeclarationBool, myConceptDeclarationInteger, myConceptDivide, myConceptExpression, myConceptExpressionState, myConceptFor, myConceptFunction, myConceptGreater, myConceptGreaterEqual, myConceptIBlock, myConceptIStatementContent, myConceptIfElse, myConceptInstantiation, myConceptInteger, myConceptIntegerExpression, myConceptIntegerParam, myConceptIntegerReference, myConceptIntegerReturn, myConceptLess, myConceptLessEqual, myConceptMinus, myConceptMultiply, myConceptNotEqual, myConceptNumberResult, myConceptParameter, myConceptParenExpression, myConceptPlus, myConceptReferBooleanParam, myConceptReferIntegerParam, myConceptReturn, myConceptSoSeWorksheet, myConceptTestSuite, myConceptVariable, myConceptWhile);
+    return Arrays.asList(myConceptAssertion, myConceptAssignBoolean, myConceptAssignInteger, myConceptBinaryBoolean, myConceptBinaryInteger, myConceptBolleanReturn, myConceptBoolean, myConceptBooleanExpression, myConceptBooleanParam, myConceptBooleanReference, myConceptBooleanResult, myConceptCallFunction, myConceptClass, myConceptConstructor, myConceptDeclaration, myConceptDeclarationBool, myConceptDeclarationInteger, myConceptDivide, myConceptExpression, myConceptExpressionStatementContent, myConceptFor, myConceptFunction, myConceptGreater, myConceptGreaterEqual, myConceptIBlock, myConceptIStatementContent, myConceptIfElse, myConceptInstantiation, myConceptInteger, myConceptIntegerExpression, myConceptIntegerParam, myConceptIntegerReference, myConceptIntegerReturn, myConceptLess, myConceptLessEqual, myConceptMinus, myConceptMultiply, myConceptNotEqual, myConceptNumberResult, myConceptParameter, myConceptParenExpression, myConceptPlus, myConceptReferBooleanParam, myConceptReferIntegerParam, myConceptReturn, myConceptSoSeWorksheet, myConceptTestSuite, myConceptVariable, myConceptWhile);
   }
 
   @Override
@@ -121,8 +121,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDivide;
       case LanguageConceptSwitch.Expression:
         return myConceptExpression;
-      case LanguageConceptSwitch.ExpressionState:
-        return myConceptExpressionState;
+      case LanguageConceptSwitch.ExpressionStatementContent:
+        return myConceptExpressionStatementContent;
       case LanguageConceptSwitch.For:
         return myConceptFor;
       case LanguageConceptSwitch.Function:
@@ -370,8 +370,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForExpressionState() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "ExpressionState", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L);
+  private static ConceptDescriptor createDescriptorForExpressionStatementContent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "ExpressionStatementContent", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L);
     b.class_(false, false, false);
     b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL);
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/4628724298694904100");

@@ -28,7 +28,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_DeclarationInteger;
   private ConceptPresentation props_Divide;
   private ConceptPresentation props_Expression;
-  private ConceptPresentation props_ExpressionState;
+  private ConceptPresentation props_ExpressionStatementContent;
   private ConceptPresentation props_For;
   private ConceptPresentation props_Function;
   private ConceptPresentation props_Greater;
@@ -194,13 +194,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Expression = cpb.create();
         }
         return props_Expression;
-      case LanguageConceptSwitch.ExpressionState:
-        if (props_ExpressionState == null) {
+      case LanguageConceptSwitch.ExpressionStatementContent:
+        if (props_ExpressionStatementContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_ExpressionState = cpb.create();
+          props_ExpressionStatementContent = cpb.create();
         }
-        return props_ExpressionState;
+        return props_ExpressionStatementContent;
       case LanguageConceptSwitch.For:
         if (props_For == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

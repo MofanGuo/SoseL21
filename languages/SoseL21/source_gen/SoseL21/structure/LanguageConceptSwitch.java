@@ -28,7 +28,7 @@ public final class LanguageConceptSwitch {
   public static final int DeclarationInteger = 16;
   public static final int Divide = 17;
   public static final int Expression = 18;
-  public static final int ExpressionState = 19;
+  public static final int ExpressionStatementContent = 19;
   public static final int For = 20;
   public static final int Function = 21;
   public static final int Greater = 22;
@@ -80,7 +80,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x783263aad93fd7a5L, DeclarationInteger);
     builder.put(0x52ab125ed6758010L, Divide);
     builder.put(0x550d21c8a2e5f49L, Expression);
-    builder.put(0x403c8839c2edc924L, ExpressionState);
+    builder.put(0x403c8839c2edc924L, ExpressionStatementContent);
     builder.put(0x783263aad93b98b1L, For);
     builder.put(0x783263aad93eaaa4L, Function);
     builder.put(0x783263aad90b2b50L, Greater);

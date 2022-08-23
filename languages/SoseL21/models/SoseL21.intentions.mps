@@ -9,6 +9,7 @@
     <import index="o7g5" ref="r:5b4dc85d-fc10-4d06-a0b6-3f07628a15e9(SoseL21.interpreter.plugin)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="b5gf" ref="r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -38,6 +39,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -49,6 +51,9 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -78,6 +83,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -85,7 +93,7 @@
   </registry>
   <node concept="2S6QgY" id="2u8r5d7zdeY">
     <property role="TrG5h" value="ExpressionEvaluation" />
-    <ref role="2ZfgGC" to="b5gf:40Wy3B2Vs$$" resolve="ExpressionState" />
+    <ref role="2ZfgGC" to="b5gf:40Wy3B2Vs$$" resolve="ExpressionStatementContent" />
     <node concept="2S6ZIM" id="2u8r5d7zdeZ" role="2ZfVej">
       <node concept="3clFbS" id="2u8r5d7zdf0" role="2VODD2">
         <node concept="3clFbF" id="2u8r5d7zdka" role="3cqZAp">
@@ -136,6 +144,61 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7UXyvJJ$Pzh">
+    <property role="3GE5qa" value="test" />
+    <property role="TrG5h" value="AssertionEvaluation" />
+    <ref role="2ZfgGC" to="b5gf:3G06KIUJHb2" resolve="Assertion" />
+    <node concept="2S6ZIM" id="7UXyvJJ$Pzi" role="2ZfVej">
+      <node concept="3clFbS" id="7UXyvJJ$Pzj" role="2VODD2">
+        <node concept="3clFbF" id="7UXyvJJ$PCr" role="3cqZAp">
+          <node concept="Xl_RD" id="7UXyvJJ$PCq" role="3clFbG">
+            <property role="Xl_RC" value="Asserting" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7UXyvJJ$Pzk" role="2ZfgGD">
+      <node concept="3clFbS" id="7UXyvJJ$Pzl" role="2VODD2">
+        <node concept="3cpWs8" id="7UXyvJJ_1v5" role="3cqZAp">
+          <node concept="3cpWsn" id="7UXyvJJ_1v6" role="3cpWs9">
+            <property role="TrG5h" value="eval" />
+            <node concept="3uibUv" id="7UXyvJJ_1v7" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="7UXyvJJKIwT" role="33vP2m">
+              <ref role="37wK5l" to="o7g5:7UXyvJJKGaW" resolve="evalAssert" />
+              <ref role="1Pybhc" to="o7g5:5aF4_VmxcrS" resolve="EvalHelper" />
+              <node concept="2Sf5sV" id="7UXyvJJKIy1" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7UXyvJJ_dZA" role="3cqZAp">
+          <node concept="2YIFZM" id="7UXyvJJ_e4Z" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.lang.String,java.lang.String)" resolve="showInfoMessage" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="37vLTw" id="7UXyvJJ_e5D" role="37wK5m">
+              <ref role="3cqZAo" node="7UXyvJJ_1v6" resolve="eval" />
+            </node>
+            <node concept="Xl_RD" id="7UXyvJJ_e6K" role="37wK5m">
+              <property role="Xl_RC" value="Asserted" />
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="7UXyvJJ_spN" role="3cqZAp">
+          <property role="2xdLsb" value="h1akgim/info" />
+          <node concept="3cpWs3" id="7UXyvJJ_spO" role="9lYJi">
+            <node concept="37vLTw" id="7UXyvJJ_spP" role="3uHU7w">
+              <ref role="3cqZAo" node="7UXyvJJ_1v6" resolve="eval" />
+            </node>
+            <node concept="Xl_RD" id="7UXyvJJ_spQ" role="3uHU7B">
+              <property role="Xl_RC" value="Asserted" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7UXyvJJ_e9E" role="3cqZAp" />
       </node>
     </node>
   </node>

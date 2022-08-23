@@ -32,7 +32,7 @@
       <node id="8661094618824176649" at="39,50,40,37" concept="7" />
       <node id="8661094618824176649" at="42,68,43,102" concept="7" />
       <node id="8661094618824176649" at="45,30,46,17" concept="7" />
-      <node id="8661094618824176649" at="50,0,51,0" concept="8" trace="ExpressionState$5s" />
+      <node id="8661094618824176649" at="50,0,51,0" concept="8" trace="ExpressionStatementContent$5s" />
       <node id="8661094618824176649" at="51,0,52,0" concept="8" trace="IntegerReference$_E" />
       <node id="8661094618824176649" at="52,0,53,0" concept="8" trace="BooleanReference$SX" />
       <node id="8661094618824176649" at="53,0,54,0" concept="8" trace="SoSeWorksheet$t7" />
@@ -73,7 +73,7 @@
         <var name="typeCheckingContext" id="8661094618824176649" />
         <var name="ws" id="8661094618824176649" />
       </scope>
-      <unit id="8661094618824194068" at="25,149,29,5" name="SoseL21.typesystem.check_SoSeWorksheet_NonTypesystemRule$1" />
+      <unit id="8661094618824194068" at="25,160,29,5" name="SoseL21.typesystem.check_SoSeWorksheet_NonTypesystemRule$1" />
       <unit id="8661094618824176649" at="49,0,55,0" name="SoseL21.typesystem.check_SoSeWorksheet_NonTypesystemRule$CONCEPTS" />
       <unit id="8661094618824176649" at="21,0,56,0" name="SoseL21.typesystem.check_SoSeWorksheet_NonTypesystemRule" />
     </file>

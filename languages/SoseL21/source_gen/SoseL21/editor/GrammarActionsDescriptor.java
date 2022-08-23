@@ -76,11 +76,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
           _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ExpressionState", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130661679420")));
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ExpressionStatementContent", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130661679420")));
           try {
-            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.ExpressionState$5s)) {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.ExpressionStatementContent$5s)) {
               final SAbstractConcept wrappedConcept = CONCEPTS.Expression$Yb;
-              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ExpressionState$5s, _context.getModel(), ExpressionState_Editor.class, _context.getEditorContext()))) {
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ExpressionStatementContent$5s, _context.getModel(), ExpressionStatementContent_Editor.class, _context.getEditorContext()))) {
                 final SConcept outputConcept = ((SConcept) subconcept);
 
                 final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
@@ -631,7 +631,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
               _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ExpressionState", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130661679420")));
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "ExpressionStatementContent", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130661679420")));
               try {
                 if (_context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM) {
                   final SNode sourceNode = new Parser(_context.getModel()).isEndOf(_context.getNode(), _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM, CONCEPTS.Expression$Yb, null);
@@ -640,7 +640,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     final SAbstractConcept sourceNodeConcept = SNodeOperations.getConcept(sourceNode);
                     SContainmentLink link = sourceNode.getContainmentLink();
                     SAbstractConcept expectedConcept = (link == null ? null : link.getTargetConcept());
-                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ExpressionState$5s, _context.getModel(), ExpressionState_Editor.class, _context.getEditorContext())) {
+                    for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.ExpressionStatementContent$5s, _context.getModel(), ExpressionStatementContent_Editor.class, _context.getEditorContext())) {
                       boolean wrapperAllowed = expectedConcept == null || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(subconcept), SNodeOperations.asSConcept(expectedConcept));
                       if (wrapperAllowed) {
                         final Iterable<String> matchingText = Sequence.<String>singleton(";");
@@ -660,7 +660,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                               }
                               protected SNode doSubstitute(@Nullable EditorContext editorContext, String pattern) {
                                 String matchingText = getMatchingText(pattern);
-                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.ExpressionState$5s);
+                                SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.ExpressionStatementContent$5s);
                                 SNodeOperations.replaceWithAnother(sourceNode, wrapper);
                                 SLinkOperations.setTarget(wrapper, LINKS.expression$_J0y, SNodeOperations.cast(sourceNode, CONCEPTS.Expression$Yb));
 
@@ -1378,7 +1378,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Expression$Yb = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e5f49L, "SoseL21.structure.Expression");
-    /*package*/ static final SConcept ExpressionState$5s = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, "SoseL21.structure.ExpressionState");
+    /*package*/ static final SConcept ExpressionStatementContent$5s = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, "SoseL21.structure.ExpressionStatementContent");
     /*package*/ static final SConcept IntegerExpression$4G = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2e6bde4L, "SoseL21.structure.IntegerExpression");
     /*package*/ static final SConcept BinaryInteger$dJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6750519L, "SoseL21.structure.BinaryInteger");
     /*package*/ static final SConcept NumberResult$ij = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b2894L, "SoseL21.structure.NumberResult");

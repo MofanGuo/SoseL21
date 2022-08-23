@@ -18,13 +18,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
-import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import SoseL21.behavior.Assertion__BehaviorDescriptor;
-import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /*package*/ class Assertion_EditorBuilder_a extends AbstractEditorBuilder {
@@ -55,7 +48,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createRefNode_1());
-    editorCell.addEditorCell(createReadOnlyModelAccessor_0());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -179,20 +171,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     protected String getNoTargetText() {
       return "<no value>";
     }
-  }
-  private EditorCell createReadOnlyModelAccessor_0() {
-    EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
-      public String getText() {
-        return (String) Assertion__BehaviorDescriptor.getTestResult_id3G06KIUJMbl.invoke(myNode, myNode);
-      }
-    }, myNode);
-    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
-    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ReadOnlyModelAccessor_bnzl51_e0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.EDITABLE, false);
-    editorCell.getStyle().putAll(style);
-    return editorCell;
   }
 
   private static final class LINKS {

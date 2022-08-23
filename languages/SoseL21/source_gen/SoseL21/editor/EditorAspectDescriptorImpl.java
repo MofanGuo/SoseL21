@@ -52,7 +52,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 14:
         return Collections.<ConceptEditor>singletonList(new DeclarationInteger_Editor());
       case 15:
-        return Collections.<ConceptEditor>singletonList(new ExpressionState_Editor());
+        return Collections.<ConceptEditor>singletonList(new ExpressionStatementContent_Editor());
       case 16:
         return Collections.<ConceptEditor>singletonList(new For_Editor());
       case 17:
@@ -162,7 +162,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 18:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Expression());
       case 19:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_ExpressionState());
+        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_ExpressionStatementContent());
       case 20:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_For());
       case 21:

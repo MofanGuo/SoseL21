@@ -28,11 +28,11 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-/*package*/ class ExpressionState_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class ExpressionStatementContent_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public ExpressionState_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public ExpressionStatementContent_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -49,7 +49,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_a4u1nt_a");
+    editorCell.setCellId("Collection_eih9z9_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createRefNode_0());
@@ -57,14 +57,14 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new expressionSingleRoleHandler_a4u1nt_a0(myNode, LINKS.expression$_J0y, getEditorContext());
+    SingleRoleCellProvider provider = new expressionSingleRoleHandler_eih9z9_a0(myNode, LINKS.expression$_J0y, getEditorContext());
     return provider.createCell();
   }
-  private static class expressionSingleRoleHandler_a4u1nt_a0 extends SingleRoleCellProvider {
+  private static class expressionSingleRoleHandler_eih9z9_a0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public expressionSingleRoleHandler_a4u1nt_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public expressionSingleRoleHandler_eih9z9_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -173,7 +173,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ";");
-    editorCell.setCellId("Constant_a4u1nt_a1a");
+    editorCell.setCellId("Constant_eih9z9_a1a");
     editorCell.setDefaultText("");
     return editorCell;
   }
