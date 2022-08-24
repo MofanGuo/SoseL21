@@ -22,14 +22,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ClassConstructor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
 
-  public static final SMethod<Iterable<SNode>> getBlock_id2u8r5d7IC3S = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2u8r5d7IC3S").build();
+  public static final SMethod<Iterable<SNode>> getNodes_id5nad63GPZ4Z = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getNodes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GPZ4Z").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBlock_id2u8r5d7IC3S);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodes_id5nad63GPZ4Z);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Iterable<SNode> getBlock_id2u8r5d7IC3S(@NotNull SNode __thisNode__) {
+  /*package*/ static Iterable<SNode> getNodes_id5nad63GPZ4Z(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.block$nbP7);
   }
 
@@ -49,7 +49,7 @@ public final class ClassConstructor__BehaviorDescriptor extends BaseBHDescriptor
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((Iterable<SNode>) getBlock_id2u8r5d7IC3S(node));
+        return (T) ((Iterable<SNode>) getNodes_id5nad63GPZ4Z(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

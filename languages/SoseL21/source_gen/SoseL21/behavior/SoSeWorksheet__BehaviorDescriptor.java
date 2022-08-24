@@ -6,31 +6,37 @@ import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
-import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7d02L, "SoseL21.structure.SoSeWorksheet");
 
-  public static final SMethod<List<SNode>> getBlock_id2u8r5d7IC3S = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2u8r5d7IC3S").build();
+  public static final SMethod<Iterable<SNode>> integers_id5nad63GE9xs = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("integers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GE9xs").build();
+  public static final SMethod<Iterable<SNode>> booleans_id5nad63GE9yQ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("booleans").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GE9yQ").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBlock_id2u8r5d7IC3S);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(integers_id5nad63GE9xs, booleans_id5nad63GE9yQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> getBlock_id2u8r5d7IC3S(@NotNull SNode __thisNode__) {
-    return SLinkOperations.getChildren(((SNode) __thisNode__), LINKS.contents$WUQ2);
+  /*package*/ static Iterable<SNode> integers_id5nad63GE9xs(@NotNull SNode __thisNode__) {
+    return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$WUQ2), CONCEPTS.Integer$xv);
+  }
+  /*package*/ static Iterable<SNode> booleans_id5nad63GE9yQ(@NotNull SNode __thisNode__) {
+    return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$WUQ2), CONCEPTS.Boolean$m_);
   }
 
   /*package*/ SoSeWorksheet__BehaviorDescriptor() {
@@ -49,7 +55,9 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) getBlock_id2u8r5d7IC3S(node));
+        return (T) ((Iterable<SNode>) integers_id5nad63GE9xs(node));
+      case 1:
+        return (T) ((Iterable<SNode>) booleans_id5nad63GE9yQ(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -81,5 +89,10 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink contents$WUQ2 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7d02L, 0xbfd127414bf7d05L, "contents");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Integer$xv = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c0f1f7L, "SoseL21.structure.Integer");
+    /*package*/ static final SConcept Boolean$m_ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c1ae46L, "SoseL21.structure.Boolean");
   }
 }

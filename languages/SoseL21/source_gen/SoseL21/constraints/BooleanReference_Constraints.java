@@ -15,15 +15,20 @@ import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import org.jetbrains.mps.openapi.model.SNode;
-import java.util.ArrayList;
+import SoseL21.behavior.SoSeWorksheet__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import SoseL21.behavior.IBlock__BehaviorDescriptor;
+import SoseL21.behavior.While__BehaviorDescriptor;
+import SoseL21.behavior.For__BehaviorDescriptor;
+import SoseL21.behavior.IfElse__BehaviorDescriptor;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import SoseL21.behavior.Function__BehaviorDescriptor;
+import SoseL21.behavior.Class__BehaviorDescriptor;
+import SoseL21.behavior.ClassConstructor__BehaviorDescriptor;
 import jetbrains.mps.scope.ListScope;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public class BooleanReference_Constraints extends BaseConstraintsDescriptor {
   public BooleanReference_Constraints() {
@@ -39,22 +44,54 @@ public class BooleanReference_Constraints extends BaseConstraintsDescriptor {
         return new BaseScopeProvider() {
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return new SNodePointer("r:1964bad3-1c4b-4e65-b684-83a58d98473f(SoseL21.constraints)", "8661094618824148976");
+            return new SNodePointer("r:1964bad3-1c4b-4e65-b684-83a58d98473f(SoseL21.constraints)", "6181811029411471121");
           }
           @Override
           public Scope createScope(final ReferenceConstraintsContext _context) {
-            Iterable<SNode> statementContents = new ArrayList<SNode>();
-            SNode root = _context.getContextNode();
+            Iterable<SNode> nodes = SoSeWorksheet__BehaviorDescriptor.booleans_id5nad63GE9yQ.invoke(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.SoSeWorksheet$t7, false, false));
+            SNode getBackNode = _context.getContextNode();
             do {
               {
-                final SNode iBlock = root;
-                if (SNodeOperations.isInstanceOf(iBlock, CONCEPTS.IBlock$KC)) {
-                  statementContents = Sequence.fromIterable(statementContents).concat(Sequence.fromIterable(IBlock__BehaviorDescriptor.getBlock_id2u8r5d7IC3S.invoke(iBlock)));
+                final SNode thisWhile = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisWhile, CONCEPTS.While$nL)) {
+                  nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(While__BehaviorDescriptor.getNodes_id5nad63GGAer.invoke(thisWhile)));
                 }
               }
-              root = SNodeOperations.getParent(root);
-            } while ((root != null));
-            return ListScope.forNamedElements(SNodeOperations.ofConcept(statementContents, CONCEPTS.Boolean$m_));
+              {
+                final SNode thisFor = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisFor, CONCEPTS.For$$_)) {
+                  nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(For__BehaviorDescriptor.getNodes_id5nad63GG6Qy.invoke(thisFor)));
+                }
+              }
+              {
+                final SNode thisIfElse = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisIfElse, CONCEPTS.IfElse$Cl)) {
+                  nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(IfElse__BehaviorDescriptor.getNodes_id5nad63GGvOZ.invoke(thisIfElse)));
+                }
+              }
+              {
+                final SNode thisFunction = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisFunction, CONCEPTS.Function$Up)) {
+                  nodes = Sequence.fromIterable(nodes).concat(ListSequence.fromList(Function__BehaviorDescriptor.getNodes_id5nad63GIuzX.invoke(thisFunction)));
+                }
+              }
+              {
+                final SNode thisClass = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisClass, CONCEPTS.Class$cf)) {
+                  nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(Class__BehaviorDescriptor.getNodes_id5nad63GPYkh.invoke(thisClass)));
+                }
+              }
+              {
+                final SNode thisClassConstructor = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisClassConstructor, CONCEPTS.ClassConstructor$WJ)) {
+                  nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(ClassConstructor__BehaviorDescriptor.getNodes_id5nad63GPZ4Z.invoke(thisClassConstructor)));
+                }
+              }
+
+              getBackNode = SNodeOperations.getParent(getBackNode);
+            } while ((getBackNode != null));
+            return ListScope.forNamedElements(SNodeOperations.ofConcept(nodes, CONCEPTS.Boolean$m_));
+
           }
         };
       }
@@ -66,7 +103,13 @@ public class BooleanReference_Constraints extends BaseConstraintsDescriptor {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept BooleanReference$SX = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, "SoseL21.structure.BooleanReference");
-    /*package*/ static final SInterfaceConcept IBlock$KC = MetaAdapterFactory.getInterfaceConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347ba80ccL, "SoseL21.structure.IBlock");
+    /*package*/ static final SConcept SoSeWorksheet$t7 = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7d02L, "SoseL21.structure.SoSeWorksheet");
+    /*package*/ static final SConcept While$nL = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93e941dL, "SoseL21.structure.While");
+    /*package*/ static final SConcept For$$_ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, "SoseL21.structure.For");
+    /*package*/ static final SConcept IfElse$Cl = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93e3187L, "SoseL21.structure.IfElse");
+    /*package*/ static final SConcept Function$Up = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, "SoseL21.structure.Function");
+    /*package*/ static final SConcept Class$cf = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L, "SoseL21.structure.Class");
+    /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
     /*package*/ static final SConcept Boolean$m_ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c1ae46L, "SoseL21.structure.Boolean");
   }
 

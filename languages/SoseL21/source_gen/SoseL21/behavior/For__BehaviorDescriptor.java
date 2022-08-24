@@ -26,19 +26,18 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class For__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, "SoseL21.structure.For");
 
-  public static final SMethod<Iterable<SNode>> getBlock_id2u8r5d7IC3S = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2u8r5d7IC3S").build();
+  public static final SMethod<Iterable<SNode>> getNodes_id5nad63GG6Qy = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getNodes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GG6Qy").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBlock_id2u8r5d7IC3S);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodes_id5nad63GG6Qy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Iterable<SNode> getBlock_id2u8r5d7IC3S(@NotNull SNode __thisNode__) {
-    Deque<SNode> addtion = LinkedListSequence.fromLinkedListNew(new LinkedList<SNode>());
-    LinkedListSequence.fromLinkedListNew(addtion).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.int$G$dq));
-    LinkedListSequence.fromLinkedListNew(addtion).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.increment$GELQ));
-    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.body$GFHU)).concat(LinkedListSequence.fromLinkedListNew(addtion));
-
+  /*package*/ static Iterable<SNode> getNodes_id5nad63GG6Qy(@NotNull SNode __thisNode__) {
+    Deque<SNode> nodes = LinkedListSequence.fromLinkedListNew(new LinkedList<SNode>());
+    LinkedListSequence.fromLinkedListNew(nodes).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.int$G$dq));
+    LinkedListSequence.fromLinkedListNew(nodes).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.increment$GELQ));
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.body$GFHU)).concat(LinkedListSequence.fromLinkedListNew(nodes));
   }
 
   /*package*/ For__BehaviorDescriptor() {
@@ -57,7 +56,7 @@ public final class For__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((Iterable<SNode>) getBlock_id2u8r5d7IC3S(node));
+        return (T) ((Iterable<SNode>) getNodes_id5nad63GG6Qy(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -22,7 +22,7 @@
       <concept id="4628724298694904100" name="SoseL21.structure.ExpressionStatementContent" flags="ng" index="22Ok4t">
         <child id="4628724298694904103" name="expression" index="22Ok4u" />
       </concept>
-      <concept id="5956875130662234260" name="SoseL21.structure.NumberResult" flags="ng" index="24O3Fa">
+      <concept id="5956875130662234260" name="SoseL21.structure.IntegerLetter" flags="ng" index="24O3Fa">
         <property id="5956875130662234261" name="value" index="24O3Fb" />
       </concept>
       <concept id="5956875130662234279" name="SoseL21.structure.ParenExpression" flags="ng" index="24O3FT">
@@ -116,31 +116,33 @@
         <child id="2848645869253780795" name="second" index="1wig_C" />
         <child id="2848645869253780793" name="first" index="1wig_E" />
       </concept>
-      <concept id="2848645869253787858" name="SoseL21.structure.BooleanResult" flags="ng" index="1wiuM1">
+      <concept id="2848645869253787858" name="SoseL21.structure.BooleanLetter" flags="ng" index="1wiuM1">
         <property id="2848645869253787859" name="value" index="1wiuM0" />
       </concept>
     </language>
   </registry>
   <node concept="vgAXQ" id="5aF4_Vmr4fa">
     <property role="TrG5h" value="ws1" />
-    <node concept="vfue3" id="28I0H3mM2Hv" role="vgAXL">
-      <property role="TrG5h" value="a" />
+    <node concept="vfue3" id="5nad63GKeGn" role="vgAXL">
+      <property role="TrG5h" value="a1" />
       <property role="3ydnqj" value="1" />
     </node>
-    <node concept="24QOpd" id="28I0H3mM2Iz" role="vgAXL">
-      <node concept="vfXB_" id="28I0H3mM2I_" role="24QOp8">
-        <ref role="22PcnB" node="28I0H3mM2Hv" resolve="a" />
-      </node>
-      <node concept="24O3Fa" id="28I0H3mM2IL" role="24QOp6">
-        <property role="24O3Fb" value="2" />
+    <node concept="22Ok4t" id="5nad63GLXT5" role="vgAXL">
+      <node concept="24RD9g" id="5nad63GLXTE" role="22Ok4u">
+        <node concept="24O3Fa" id="5nad63GLXTP" role="24Rxm0">
+          <property role="24O3Fb" value="1" />
+        </node>
+        <node concept="vfXB_" id="5nad63GLXTw" role="24Rxm2">
+          <ref role="22PcnB" node="5nad63GKeGn" resolve="a1" />
+        </node>
       </node>
     </node>
-    <node concept="22Ok4t" id="28I0H3mM2PW" role="vgAXL">
-      <node concept="24RD9g" id="28I0H3mM2Qs" role="22Ok4u">
-        <node concept="24O3Fa" id="28I0H3mM2QE" role="24Rxm0">
+    <node concept="22Ok4t" id="5nad63GKeXA" role="vgAXL">
+      <node concept="24RD9g" id="5nad63GKeXM" role="22Ok4u">
+        <node concept="24O3Fa" id="5nad63GKeY0" role="24Rxm0">
           <property role="24O3Fb" value="2" />
         </node>
-        <node concept="24O3Fa" id="28I0H3mM2Qn" role="24Rxm2">
+        <node concept="24O3Fa" id="5nad63GKeX_" role="24Rxm2">
           <property role="24O3Fb" value="1" />
         </node>
       </node>

@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="b5gf" ref="r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)" implicit="true" />
-    <import index="6cb" ref="r:d88d8477-9fb3-40da-a72e-e3bdfeff520b(SoseL21.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="6cb" ref="r:d88d8477-9fb3-40da-a72e-e3bdfeff520b(SoseL21.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -46,7 +46,6 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -64,14 +63,8 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -295,57 +288,7 @@
   <node concept="18kY7G" id="7wMoUFpfNN2">
     <property role="TrG5h" value="check_Function" />
     <property role="3GE5qa" value="expressions.func" />
-    <node concept="3clFbS" id="7wMoUFpfNN3" role="18ibNy">
-      <node concept="3clFbJ" id="7wMoUFpfNNf" role="3cqZAp">
-        <node concept="3fqX7Q" id="7wMoUFpfXlD" role="3clFbw">
-          <node concept="1eOMI4" id="7wMoUFpfXlF" role="3fr31v">
-            <node concept="3clFbC" id="7wMoUFpfXlG" role="1eOMHV">
-              <node concept="2OqwBi" id="7wMoUFpfXlH" role="3uHU7w">
-                <node concept="2OqwBi" id="7wMoUFpfXlI" role="2Oq$k0">
-                  <node concept="1YBJjd" id="7wMoUFpfXlJ" role="2Oq$k0">
-                    <ref role="1YBMHb" node="7wMoUFpfNN5" resolve="func" />
-                  </node>
-                  <node concept="3TrEf2" id="7wMoUFpfXlK" role="2OqNvi">
-                    <ref role="3Tt5mk" to="b5gf:7wMoUFpfERU" resolve="funcValue" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="7wMoUFpfXlL" role="2OqNvi">
-                  <ref role="37wK5l" to="6cb:5Eg5JaKwnPu" resolve="getType" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="7wMoUFpfXlM" role="3uHU7B">
-                <node concept="2OqwBi" id="7wMoUFpfXlN" role="2Oq$k0">
-                  <node concept="1YBJjd" id="7wMoUFpfXlO" role="2Oq$k0">
-                    <ref role="1YBMHb" node="7wMoUFpfNN5" resolve="func" />
-                  </node>
-                  <node concept="3TrEf2" id="7wMoUFpfXlP" role="2OqNvi">
-                    <ref role="3Tt5mk" to="b5gf:7wMoUFpfERY" resolve="funcReturn" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="7wMoUFpfXlQ" role="2OqNvi">
-                  <ref role="37wK5l" to="6cb:7wMoUFpfESv" resolve="getType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="7wMoUFpfNNh" role="3clFbx">
-          <node concept="2MkqsV" id="7wMoUFpfVlz" role="3cqZAp">
-            <node concept="Xl_RD" id="7wMoUFpfVlJ" role="2MkJ7o">
-              <property role="Xl_RC" value="return does not match" />
-            </node>
-            <node concept="2OqwBi" id="7wMoUFpfVyh" role="1urrMF">
-              <node concept="1YBJjd" id="7wMoUFpfVn2" role="2Oq$k0">
-                <ref role="1YBMHb" node="7wMoUFpfNN5" resolve="func" />
-              </node>
-              <node concept="3TrEf2" id="7wMoUFpfWva" role="2OqNvi">
-                <ref role="3Tt5mk" to="b5gf:7wMoUFpfERU" resolve="funcValue" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
+    <node concept="3clFbS" id="7wMoUFpfNN3" role="18ibNy" />
     <node concept="1YaCAy" id="7wMoUFpfNN5" role="1YuTPh">
       <property role="TrG5h" value="func" />
       <ref role="1YaFvo" to="b5gf:7wMoUFpfEE$" resolve="Function" />

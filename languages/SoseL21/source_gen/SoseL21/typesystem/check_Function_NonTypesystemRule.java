@@ -7,27 +7,14 @@ import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
-import SoseL21.behavior.Return__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import SoseL21.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.errors.messageTargets.MessageTarget;
-import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
-import jetbrains.mps.errors.IErrorReporter;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class check_Function_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
   public check_Function_NonTypesystemRule() {
   }
   public void applyRule(final SNode func, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (!((Return__BehaviorDescriptor.getType_id7wMoUFpfESv.invoke(SLinkOperations.getTarget(func, LINKS.funcReturn$NSsa)) == Expression__BehaviorDescriptor.getType_id5Eg5JaKwnPu.invoke(SLinkOperations.getTarget(func, LINKS.funcValue$NM$L))))) {
-      {
-        final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(func, LINKS.funcValue$NM$L), "return does not match", "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618827306339", null, errorTarget);
-      }
-    }
   }
   public SAbstractConcept getApplicableConcept() {
     return CONCEPTS.Function$Up;
@@ -37,11 +24,6 @@ public class check_Function_NonTypesystemRule extends AbstractNonTypesystemRule_
   }
   public boolean overrides() {
     return false;
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink funcValue$NM$L = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, 0x783263aad93eadfaL, "funcValue");
-    /*package*/ static final SContainmentLink funcReturn$NSsa = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, 0x783263aad93eadfeL, "funcReturn");
   }
 
   private static final class CONCEPTS {

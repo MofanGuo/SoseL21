@@ -13,12 +13,10 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SProperty;
 
 public class Assertion_Constraints extends BaseConstraintsDescriptor {
   public Assertion_Constraints() {
@@ -45,9 +43,6 @@ public class Assertion_Constraints extends BaseConstraintsDescriptor {
       final SNode callFunction = childNode;
       if (SNodeOperations.isInstanceOf(callFunction, CONCEPTS.CallFunction$Ff)) {
         SNode function = SLinkOperations.getTarget(callFunction, LINKS.func$D2o4);
-        if (SPropertyOperations.getBoolean(function, PROPS.nonpure$E7S$)) {
-          return false;
-        }
       }
     }
     return true;
@@ -61,9 +56,5 @@ public class Assertion_Constraints extends BaseConstraintsDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink func$D2o4 = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9437780L, 0x783263aad9437785L, "func");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty nonpure$E7S$ = MetaAdapterFactory.getProperty(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, 0x783263aad93ead1cL, "nonpure");
   }
 }

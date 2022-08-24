@@ -6,11 +6,11 @@ import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
-import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -22,14 +22,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class While__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93e941dL, "SoseL21.structure.While");
 
-  public static final SMethod<List<SNode>> getBlock_id2u8r5d7IC3S = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2u8r5d7IC3S").build();
+  public static final SMethod<Iterable<SNode>> getNodes_id5nad63GGAer = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getNodes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GGAer").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getBlock_id2u8r5d7IC3S);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodes_id5nad63GGAer);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> getBlock_id2u8r5d7IC3S(@NotNull SNode __thisNode__) {
+  /*package*/ static Iterable<SNode> getNodes_id5nad63GGAer(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(((SNode) __thisNode__), LINKS.body$Vi2t);
   }
 
@@ -49,7 +49,7 @@ public final class While__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) getBlock_id2u8r5d7IC3S(node));
+        return (T) ((Iterable<SNode>) getNodes_id5nad63GGAer(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

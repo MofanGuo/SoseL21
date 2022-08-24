@@ -34,7 +34,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FunctionInteger;
   private ConceptPresentation props_Greater;
   private ConceptPresentation props_GreaterEqual;
-  private ConceptPresentation props_IBlock;
   private ConceptPresentation props_IStatementContent;
   private ConceptPresentation props_IfElse;
   private ConceptPresentation props_Initializor;
@@ -238,12 +237,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GreaterEqual = cpb.create();
         }
         return props_GreaterEqual;
-      case LanguageConceptSwitch.IBlock:
-        if (props_IBlock == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_IBlock = cpb.create();
-        }
-        return props_IBlock;
       case LanguageConceptSwitch.IStatementContent:
         if (props_IStatementContent == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -7,17 +7,18 @@ import org.jetbrains.mps.openapi.model.SNode;
 import SoseL21.plugin.SoselValue;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class EvalHelper {
   private static InterpreterEvaluationHelper helper = new InterpreterEvaluationHelper("arithmetic");
-  public static String eval(SNode n) {
+  public static String eval(SNode node) {
     try {
       SoselValue.findInt().empty();
       SoselValue.findBool().empty();
-      Object result = helper.evaluate(n);
+      helper.evaluate(SNodeOperations.getNodeAncestor(node, CONCEPTS.SoSeWorksheet$t7, false, false));
+      Object result = helper.evaluate(node);
       if (result != null) {
         return String.valueOf(result);
       } else {
@@ -45,12 +46,13 @@ public class EvalHelper {
     return "Wrong->" + " function result:" + result + "    with expecting result:" + compareResult;
   }
 
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept SoSeWorksheet$t7 = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7d02L, "SoseL21.structure.SoSeWorksheet");
+    /*package*/ static final SConcept Expression$Yb = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e5f49L, "SoseL21.structure.Expression");
+  }
+
   private static final class LINKS {
     /*package*/ static final SContainmentLink value$au6v = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3b001b0bbabed2c2L, 0x3b001b0bbabed2e3L, "value");
     /*package*/ static final SContainmentLink funtion$au$x = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3b001b0bbabed2c2L, 0x3b001b0bbabed2e5L, "funtion");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept Expression$Yb = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e5f49L, "SoseL21.structure.Expression");
   }
 }

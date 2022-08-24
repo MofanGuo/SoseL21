@@ -94,7 +94,6 @@
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -743,9 +742,6 @@
         <node concept="VPM3Z" id="2UfX7RQVUfQ" role="3F10Kt" />
         <node concept="PMmxH" id="2UfX7RQVUfY" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        </node>
-        <node concept="1kHk_G" id="2UfX7RQVUg7" role="3EZMnx">
-          <ref role="1NtTu8" to="b5gf:7wMoUFpfEOs" resolve="nonpure" />
         </node>
         <node concept="3F0A7n" id="2UfX7RQVUgk" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
