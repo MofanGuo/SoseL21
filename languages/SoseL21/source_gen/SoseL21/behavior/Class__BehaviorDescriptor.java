@@ -40,7 +40,7 @@ public final class Class__BehaviorDescriptor extends BaseBHDescriptor {
     for (SNode state : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.state$nj75))) {
       {
         final SNode constructor = state;
-        if (SNodeOperations.isInstanceOf(constructor, CONCEPTS.Constructor$WJ)) {
+        if (SNodeOperations.isInstanceOf(constructor, CONCEPTS.ClassConstructor$WJ)) {
           if (ListSequence.fromList(sig).count() != ListSequence.fromList(SLinkOperations.getChildren(constructor, LINKS.params$nbn5)).count()) {
             continue;
           }
@@ -115,6 +115,6 @@ public final class Class__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Constructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.Constructor");
+    /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
   }
 }

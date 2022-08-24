@@ -4,19 +4,6 @@ package SoseL21.runtime;
 
 
 public class map_toJavaCode {
-  public boolean test_int_1;
-  public boolean test_int_2;
-  public boolean test_bool;
-  public boolean ;
-  public boolean ;
-  public boolean or;
-  public boolean myDog;
-  public int test_int_1;
-  public int test_int_2;
-  public int test_bool;
-  public int ;
-  public int ;
-  public int or;
-  public int myDog;
+
 
 }

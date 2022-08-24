@@ -21,28 +21,30 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBolleanReturn = createDescriptorForBolleanReturn();
   /*package*/ final ConceptDescriptor myConceptBoolean = createDescriptorForBoolean();
   /*package*/ final ConceptDescriptor myConceptBooleanExpression = createDescriptorForBooleanExpression();
+  /*package*/ final ConceptDescriptor myConceptBooleanLetter = createDescriptorForBooleanLetter();
   /*package*/ final ConceptDescriptor myConceptBooleanParam = createDescriptorForBooleanParam();
   /*package*/ final ConceptDescriptor myConceptBooleanReference = createDescriptorForBooleanReference();
-  /*package*/ final ConceptDescriptor myConceptBooleanResult = createDescriptorForBooleanResult();
   /*package*/ final ConceptDescriptor myConceptCallFunction = createDescriptorForCallFunction();
   /*package*/ final ConceptDescriptor myConceptClass = createDescriptorForClass();
-  /*package*/ final ConceptDescriptor myConceptConstructor = createDescriptorForConstructor();
+  /*package*/ final ConceptDescriptor myConceptClassCallFunction = createDescriptorForClassCallFunction();
+  /*package*/ final ConceptDescriptor myConceptClassConstructor = createDescriptorForClassConstructor();
   /*package*/ final ConceptDescriptor myConceptDeclaration = createDescriptorForDeclaration();
-  /*package*/ final ConceptDescriptor myConceptDeclarationBool = createDescriptorForDeclarationBool();
-  /*package*/ final ConceptDescriptor myConceptDeclarationInteger = createDescriptorForDeclarationInteger();
   /*package*/ final ConceptDescriptor myConceptDivide = createDescriptorForDivide();
   /*package*/ final ConceptDescriptor myConceptExpression = createDescriptorForExpression();
   /*package*/ final ConceptDescriptor myConceptExpressionStatementContent = createDescriptorForExpressionStatementContent();
   /*package*/ final ConceptDescriptor myConceptFor = createDescriptorForFor();
   /*package*/ final ConceptDescriptor myConceptFunction = createDescriptorForFunction();
+  /*package*/ final ConceptDescriptor myConceptFunctionBool = createDescriptorForFunctionBool();
+  /*package*/ final ConceptDescriptor myConceptFunctionInteger = createDescriptorForFunctionInteger();
   /*package*/ final ConceptDescriptor myConceptGreater = createDescriptorForGreater();
   /*package*/ final ConceptDescriptor myConceptGreaterEqual = createDescriptorForGreaterEqual();
   /*package*/ final ConceptDescriptor myConceptIBlock = createDescriptorForIBlock();
   /*package*/ final ConceptDescriptor myConceptIStatementContent = createDescriptorForIStatementContent();
   /*package*/ final ConceptDescriptor myConceptIfElse = createDescriptorForIfElse();
-  /*package*/ final ConceptDescriptor myConceptInstantiation = createDescriptorForInstantiation();
+  /*package*/ final ConceptDescriptor myConceptInitializor = createDescriptorForInitializor();
   /*package*/ final ConceptDescriptor myConceptInteger = createDescriptorForInteger();
   /*package*/ final ConceptDescriptor myConceptIntegerExpression = createDescriptorForIntegerExpression();
+  /*package*/ final ConceptDescriptor myConceptIntegerLetter = createDescriptorForIntegerLetter();
   /*package*/ final ConceptDescriptor myConceptIntegerParam = createDescriptorForIntegerParam();
   /*package*/ final ConceptDescriptor myConceptIntegerReference = createDescriptorForIntegerReference();
   /*package*/ final ConceptDescriptor myConceptIntegerReturn = createDescriptorForIntegerReturn();
@@ -51,7 +53,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMinus = createDescriptorForMinus();
   /*package*/ final ConceptDescriptor myConceptMultiply = createDescriptorForMultiply();
   /*package*/ final ConceptDescriptor myConceptNotEqual = createDescriptorForNotEqual();
-  /*package*/ final ConceptDescriptor myConceptNumberResult = createDescriptorForNumberResult();
+  /*package*/ final ConceptDescriptor myConceptObject = createDescriptorForObject();
   /*package*/ final ConceptDescriptor myConceptParameter = createDescriptorForParameter();
   /*package*/ final ConceptDescriptor myConceptParenExpression = createDescriptorForParenExpression();
   /*package*/ final ConceptDescriptor myConceptPlus = createDescriptorForPlus();
@@ -76,7 +78,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAssertion, myConceptAssignBoolean, myConceptAssignInteger, myConceptBinaryBoolean, myConceptBinaryInteger, myConceptBolleanReturn, myConceptBoolean, myConceptBooleanExpression, myConceptBooleanParam, myConceptBooleanReference, myConceptBooleanResult, myConceptCallFunction, myConceptClass, myConceptConstructor, myConceptDeclaration, myConceptDeclarationBool, myConceptDeclarationInteger, myConceptDivide, myConceptExpression, myConceptExpressionStatementContent, myConceptFor, myConceptFunction, myConceptGreater, myConceptGreaterEqual, myConceptIBlock, myConceptIStatementContent, myConceptIfElse, myConceptInstantiation, myConceptInteger, myConceptIntegerExpression, myConceptIntegerParam, myConceptIntegerReference, myConceptIntegerReturn, myConceptLess, myConceptLessEqual, myConceptMinus, myConceptMultiply, myConceptNotEqual, myConceptNumberResult, myConceptParameter, myConceptParenExpression, myConceptPlus, myConceptReferBooleanParam, myConceptReferIntegerParam, myConceptReturn, myConceptSoSeWorksheet, myConceptTestSuite, myConceptVariable, myConceptWhile);
+    return Arrays.asList(myConceptAssertion, myConceptAssignBoolean, myConceptAssignInteger, myConceptBinaryBoolean, myConceptBinaryInteger, myConceptBolleanReturn, myConceptBoolean, myConceptBooleanExpression, myConceptBooleanLetter, myConceptBooleanParam, myConceptBooleanReference, myConceptCallFunction, myConceptClass, myConceptClassCallFunction, myConceptClassConstructor, myConceptDeclaration, myConceptDivide, myConceptExpression, myConceptExpressionStatementContent, myConceptFor, myConceptFunction, myConceptFunctionBool, myConceptFunctionInteger, myConceptGreater, myConceptGreaterEqual, myConceptIBlock, myConceptIStatementContent, myConceptIfElse, myConceptInitializor, myConceptInteger, myConceptIntegerExpression, myConceptIntegerLetter, myConceptIntegerParam, myConceptIntegerReference, myConceptIntegerReturn, myConceptLess, myConceptLessEqual, myConceptMinus, myConceptMultiply, myConceptNotEqual, myConceptObject, myConceptParameter, myConceptParenExpression, myConceptPlus, myConceptReferBooleanParam, myConceptReferIntegerParam, myConceptReturn, myConceptSoSeWorksheet, myConceptTestSuite, myConceptVariable, myConceptWhile);
   }
 
   @Override
@@ -99,24 +101,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBoolean;
       case LanguageConceptSwitch.BooleanExpression:
         return myConceptBooleanExpression;
+      case LanguageConceptSwitch.BooleanLetter:
+        return myConceptBooleanLetter;
       case LanguageConceptSwitch.BooleanParam:
         return myConceptBooleanParam;
       case LanguageConceptSwitch.BooleanReference:
         return myConceptBooleanReference;
-      case LanguageConceptSwitch.BooleanResult:
-        return myConceptBooleanResult;
       case LanguageConceptSwitch.CallFunction:
         return myConceptCallFunction;
       case LanguageConceptSwitch.Class:
         return myConceptClass;
-      case LanguageConceptSwitch.Constructor:
-        return myConceptConstructor;
+      case LanguageConceptSwitch.ClassCallFunction:
+        return myConceptClassCallFunction;
+      case LanguageConceptSwitch.ClassConstructor:
+        return myConceptClassConstructor;
       case LanguageConceptSwitch.Declaration:
         return myConceptDeclaration;
-      case LanguageConceptSwitch.DeclarationBool:
-        return myConceptDeclarationBool;
-      case LanguageConceptSwitch.DeclarationInteger:
-        return myConceptDeclarationInteger;
       case LanguageConceptSwitch.Divide:
         return myConceptDivide;
       case LanguageConceptSwitch.Expression:
@@ -127,6 +127,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFor;
       case LanguageConceptSwitch.Function:
         return myConceptFunction;
+      case LanguageConceptSwitch.FunctionBool:
+        return myConceptFunctionBool;
+      case LanguageConceptSwitch.FunctionInteger:
+        return myConceptFunctionInteger;
       case LanguageConceptSwitch.Greater:
         return myConceptGreater;
       case LanguageConceptSwitch.GreaterEqual:
@@ -137,12 +141,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIStatementContent;
       case LanguageConceptSwitch.IfElse:
         return myConceptIfElse;
-      case LanguageConceptSwitch.Instantiation:
-        return myConceptInstantiation;
+      case LanguageConceptSwitch.Initializor:
+        return myConceptInitializor;
       case LanguageConceptSwitch.Integer:
         return myConceptInteger;
       case LanguageConceptSwitch.IntegerExpression:
         return myConceptIntegerExpression;
+      case LanguageConceptSwitch.IntegerLetter:
+        return myConceptIntegerLetter;
       case LanguageConceptSwitch.IntegerParam:
         return myConceptIntegerParam;
       case LanguageConceptSwitch.IntegerReference:
@@ -159,8 +165,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMultiply;
       case LanguageConceptSwitch.NotEqual:
         return myConceptNotEqual;
-      case LanguageConceptSwitch.NumberResult:
-        return myConceptNumberResult;
+      case LanguageConceptSwitch.Object:
+        return myConceptObject;
       case LanguageConceptSwitch.Parameter:
         return myConceptParameter;
       case LanguageConceptSwitch.ParenExpression:
@@ -246,6 +252,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SoseL21.structure.Return", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eae03L);
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827552350");
     b.version(2);
+    b.alias("return with bool");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBoolean() {
@@ -266,6 +273,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForBooleanLetter() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "BooleanLetter", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c180d2L);
+    b.class_(false, false, false);
+    b.super_("SoseL21.structure.BooleanExpression", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2e6bde3L);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/2848645869253787858");
+    b.version(2);
+    b.property("value", 0x27886c5347c180d3L).type(PrimitiveTypeId.BOOLEAN).origin("2848645869253787859").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForBooleanParam() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "BooleanParam", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd8f3L);
     b.class_(false, false, false);
@@ -283,15 +299,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/383036988345698878");
     b.version(2);
     b.associate("ref", 0x403c8839c2e7a258L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c1ae46L).optional(false).origin("4628724298694500952").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForBooleanResult() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "BooleanResult", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c180d2L);
-    b.class_(false, false, false);
-    b.super_("SoseL21.structure.BooleanExpression", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2e6bde3L);
-    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/2848645869253787858");
-    b.version(2);
-    b.property("value", 0x27886c5347c180d3L).type(PrimitiveTypeId.BOOLEAN).origin("2848645869253787859").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCallFunction() {
@@ -317,8 +324,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("class");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForConstructor() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Constructor", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL);
+  private static ConceptDescriptor createDescriptorForClassCallFunction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "ClassCallFunction", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3fb7e234ed94e3e8L);
+    b.class_(false, false, false);
+    b.super_("SoseL21.structure.Class", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L);
+    b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/4591387062079644648");
+    b.version(2);
+    b.associate("func", 0x3fb7e234ed94f5e8L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L).optional(false).origin("4591387062079649256").done();
+    b.associate("object", 0x3fb7e234ee17864cL).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3fb7e234edb96592L).optional(false).origin("4591387062088205900").done();
+    b.aggregate("params", 0x3fb7e234ed94f5edL).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L).optional(true).ordered(true).multiple(true).origin("4591387062079649261").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForClassConstructor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "ClassConstructor", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL);
     b.class_(false, false, false);
     b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL);
     b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347ba80ccL);
@@ -334,24 +353,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827314690");
     b.version(2);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForDeclarationBool() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "DeclarationBool", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd671L);
-    b.class_(false, false, false);
-    b.super_("SoseL21.structure.Declaration", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L);
-    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827314801");
-    b.version(2);
-    b.property("value", 0x783263aad93fd672L).type(PrimitiveTypeId.BOOLEAN).origin("8661094618827314802").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForDeclarationInteger() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "DeclarationInteger", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd7a5L);
-    b.class_(false, false, false);
-    b.super_("SoseL21.structure.Declaration", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L);
-    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827315109");
-    b.version(2);
-    b.property("value", 0x783263aad93fd7a6L).type(PrimitiveTypeId.INTEGER).origin("8661094618827315110").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDivide() {
@@ -409,6 +410,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("function");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForFunctionBool() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "FunctionBool", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd671L);
+    b.class_(false, false, false);
+    b.super_("SoseL21.structure.Declaration", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827314801");
+    b.version(2);
+    b.property("value", 0x783263aad93fd672L).type(PrimitiveTypeId.BOOLEAN).origin("8661094618827314802").done();
+    b.alias("call bool param");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFunctionInteger() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "FunctionInteger", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd7a5L);
+    b.class_(false, false, false);
+    b.super_("SoseL21.structure.Declaration", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827315109");
+    b.version(2);
+    b.property("value", 0x783263aad93fd7a6L).type(PrimitiveTypeId.INTEGER).origin("8661094618827315110").done();
+    b.alias("call integer param");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForGreater() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Greater", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad90b2b50L);
     b.class_(false, false, false);
@@ -454,8 +475,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("else", 0x783263aad93e3192L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL).optional(true).ordered(true).multiple(true).origin("8661094618827207058").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForInstantiation() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Instantiation", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x352459422d1d9282L);
+  private static ConceptDescriptor createDescriptorForInitializor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Initializor", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x352459422d1d9282L);
     b.class_(false, false, false);
     b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
@@ -463,6 +484,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("class", 0x352459422d1d928aL).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L).optional(false).origin("3829283723931390602").done();
     b.aggregate("parameters", 0x352459422d1d9288L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd602L).optional(true).ordered(true).multiple(true).origin("3829283723931390600").done();
+    b.aggregate("object", 0x3fb7e234edff6bc3L).target(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3fb7e234edb96592L).optional(false).ordered(true).multiple(false).origin("4591387062086626243").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInteger() {
@@ -481,6 +503,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SoseL21.structure.Expression", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e5f49L);
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/4628724298694442468");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIntegerLetter() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "IntegerLetter", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b2894L);
+    b.class_(false, false, false);
+    b.super_("SoseL21.structure.IntegerExpression", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2e6bde4L);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/5956875130662234260");
+    b.version(2);
+    b.property("value", 0x52ab125ed67b2895L).type(PrimitiveTypeId.INTEGER).origin("5956875130662234261").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIntegerParam() {
@@ -508,6 +539,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("SoseL21.structure.Return", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eae03L);
     b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/8661094618827552006");
     b.version(2);
+    b.alias("return with integer");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLess() {
@@ -555,13 +587,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("!=");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForNumberResult() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "NumberResult", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b2894L);
+  private static ConceptDescriptor createDescriptorForObject() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SoseL21", "Object", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3fb7e234edb96592L);
     b.class_(false, false, false);
-    b.super_("SoseL21.structure.IntegerExpression", 0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2e6bde4L);
-    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/5956875130662234260");
+    b.parent(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7cffL);
+    b.origin("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)/4591387062082037138");
     b.version(2);
-    b.property("value", 0x52ab125ed67b2895L).type(PrimitiveTypeId.INTEGER).origin("5956875130662234261").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForParameter() {

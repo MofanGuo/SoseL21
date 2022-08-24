@@ -310,12 +310,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
           _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "NumberResult", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130662234382")));
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "IntegerLetter", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130662234382")));
           try {
-            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.NumberResult$ij)) {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.IntegerLetter$ij)) {
               final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
 
-              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.NumberResult$ij, _context.getModel(), NumberResult_Editor.class, _context.getEditorContext()))) {
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.IntegerLetter$ij, _context.getModel(), IntegerLetter_Editor.class, _context.getEditorContext()))) {
                 final SConcept outputConcept = ((SConcept) subconcept);
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
@@ -355,7 +355,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                       @Override
                       public SAbstractConcept getOutputConcept() {
-                        return CONCEPTS.NumberResult$ij;
+                        return CONCEPTS.IntegerLetter$ij;
                       }
                     });
                   }
@@ -533,12 +533,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
         public Iterable<SubstituteMenuItem> query() {
           List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
           _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "BooleanResult", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "2848645869253787873")));
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "BooleanLetter", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "2848645869253787873")));
           try {
-            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.BooleanResult$U)) {
+            if (SConceptOperations.isExactly(SNodeOperations.asSConcept(expectedOutputConceptExactly), CONCEPTS.BooleanLetter$U)) {
               final SAbstractConcept expectedOutputConcept = GrammarCellsUtil.getExpectedOutputConcept(_context, expectedOutputConceptExactly);
 
-              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BooleanResult$U, _context.getModel(), BooleanResult_Editor.class, _context.getEditorContext()))) {
+              for (SConcept subconcept : ListSequence.fromList(GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.BooleanLetter$U, _context.getModel(), BooleanLetter_Editor.class, _context.getEditorContext()))) {
                 final SConcept outputConcept = ((SConcept) subconcept);
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
@@ -578,7 +578,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                       @Override
                       public SAbstractConcept getOutputConcept() {
-                        return CONCEPTS.BooleanResult$U;
+                        return CONCEPTS.BooleanLetter$U;
                       }
                     });
                   }
@@ -911,7 +911,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
               _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "NumberResult", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130662234382")));
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "IntegerLetter", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "5956875130662234382")));
               try {
               } finally {
                 _context.getEditorMenuTrace().popTraceInfo();
@@ -1126,7 +1126,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
               _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "BooleanResult", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "2848645869253787873")));
+              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "BooleanLetter", new SNodePointer("r:822144c8-f35c-4bba-91f2-0cbb647dda23(SoseL21.editor)", "2848645869253787873")));
               try {
               } finally {
                 _context.getEditorMenuTrace().popTraceInfo();
@@ -1303,12 +1303,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
       }
     }
     {
-      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.NumberResult$ij, visibleLanguages);
+      final List<SConcept> subconcepts = GrammarCellsUtil.getVisibleSubconceptsNonAbstract(CONCEPTS.IntegerLetter$ij, visibleLanguages);
       for (final SAbstractConcept subconcept : subconcepts) {
         ListSequence.fromList(rules).addElement(new AbstractRule() {
           private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
           {
-            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.NumberResult$ij, PROPS.value$dkY0));
+            ListSequence.fromList(symbols).addElement(new PropertySymbol(CONCEPTS.IntegerLetter$ij, PROPS.value$dkY0));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
                 return it != null;
@@ -1325,7 +1325,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           }
           @Override
           public SAbstractConcept getDefinedForConcept() {
-            return CONCEPTS.NumberResult$ij;
+            return CONCEPTS.IntegerLetter$ij;
           }
           @Override
           public String toString() {
@@ -1381,9 +1381,9 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     /*package*/ static final SConcept ExpressionStatementContent$5s = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, "SoseL21.structure.ExpressionStatementContent");
     /*package*/ static final SConcept IntegerExpression$4G = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2e6bde4L, "SoseL21.structure.IntegerExpression");
     /*package*/ static final SConcept BinaryInteger$dJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6750519L, "SoseL21.structure.BinaryInteger");
-    /*package*/ static final SConcept NumberResult$ij = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b2894L, "SoseL21.structure.NumberResult");
+    /*package*/ static final SConcept IntegerLetter$ij = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b2894L, "SoseL21.structure.IntegerLetter");
     /*package*/ static final SConcept BinaryBoolean$bW = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c15db5L, "SoseL21.structure.BinaryBoolean");
-    /*package*/ static final SConcept BooleanResult$U = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c180d2L, "SoseL21.structure.BooleanResult");
+    /*package*/ static final SConcept BooleanLetter$U = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c180d2L, "SoseL21.structure.BooleanLetter");
     /*package*/ static final SConcept ParenExpression$_F = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b28a7L, "SoseL21.structure.ParenExpression");
   }
 

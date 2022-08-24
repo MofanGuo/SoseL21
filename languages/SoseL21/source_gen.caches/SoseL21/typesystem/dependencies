@@ -30,6 +30,7 @@
   <dependency className="SoseL21.typesystem.check_CallFunction_NonTypesystemRule">
     <classNode dependClassName="SoseL21.behavior.Declaration__BehaviorDescriptor" />
     <classNode dependClassName="SoseL21.behavior.Parameter__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />

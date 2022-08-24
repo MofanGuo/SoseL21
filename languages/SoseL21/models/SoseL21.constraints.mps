@@ -64,6 +64,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -215,6 +216,7 @@
           </node>
           <node concept="MpOyq" id="7wMoUFp3U3_" role="3cqZAp">
             <node concept="3clFbS" id="7wMoUFp3U3B" role="2LFqv$">
+              <node concept="3clFbH" id="5nad63GAYRt" role="3cqZAp" />
               <node concept="Jncv_" id="7wMoUFp3UJF" role="3cqZAp">
                 <ref role="JncvD" to="b5gf:2u8r5d7IC3c" resolve="IBlock" />
                 <node concept="37vLTw" id="7wMoUFp3UKj" role="JncvB">
@@ -553,10 +555,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="7wMoUFpgE2O">
-    <property role="3GE5qa" value="expressions.func" />
-    <ref role="1M2myG" to="b5gf:7wMoUFpg49u" resolve="Constructor" />
   </node>
   <node concept="1M2fIO" id="3G06KIUJHzq">
     <property role="3GE5qa" value="test" />

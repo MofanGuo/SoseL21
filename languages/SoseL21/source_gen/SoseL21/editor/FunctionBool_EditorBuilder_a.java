@@ -23,11 +23,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class DeclarationBool_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class FunctionBool_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public DeclarationBool_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public FunctionBool_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -48,7 +48,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       final SProperty property = PROPS.value$ixaw;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no value>");
+      editorCell.setDefaultText("true");
       editorCell.setCellId("property_value");
       editorCell.setBig(true);
       setCellContext(editorCell);

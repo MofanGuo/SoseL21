@@ -19,8 +19,8 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public final class Constructor__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.Constructor");
+public final class ClassConstructor__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
 
   public static final SMethod<Iterable<SNode>> getBlock_id2u8r5d7IC3S = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getBlock").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2u8r5d7IC3S").build();
 
@@ -33,7 +33,7 @@ public final class Constructor__BehaviorDescriptor extends BaseBHDescriptor {
     return SLinkOperations.getChildren(__thisNode__, LINKS.block$nbP7);
   }
 
-  /*package*/ Constructor__BehaviorDescriptor() {
+  /*package*/ ClassConstructor__BehaviorDescriptor() {
   }
 
   @Override

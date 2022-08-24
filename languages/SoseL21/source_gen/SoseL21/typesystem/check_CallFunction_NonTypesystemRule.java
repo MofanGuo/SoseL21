@@ -27,19 +27,24 @@ public class check_CallFunction_NonTypesystemRule extends AbstractNonTypesystemR
   public void applyRule(final SNode call, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     List<SNode> pDeclarations = SLinkOperations.getChildren(call, LINKS.values$D1U2);
     List<SNode> sigs = SLinkOperations.getChildren(SLinkOperations.getTarget(call, LINKS.func$D2o4), LINKS.params$E8mA);
-    if (pDeclarations.size() != sigs.size()) {
+    int declarationSize = pDeclarations.size();
+    int signatureSize = sigs.size();
+    String errorMsg = "mismatching signature";
+    if (declarationSize != signatureSize) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(call, "mismatching signature", "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618827657358", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(call, errorMsg, "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618827657358", null, errorTarget);
       }
     }
-    for (int i = 0; i < pDeclarations.size(); i++) {
-      if (Declaration__BehaviorDescriptor.getType_id7wMoUFpfXoA.invoke(ListSequence.fromList(pDeclarations).getElement(i)) != Parameter__BehaviorDescriptor.getType_id7wMoUFpfEPe.invoke(ListSequence.fromList(sigs).getElement(i))) {
+    int start = 0;
+    while (start < declarationSize) {
+      if (Declaration__BehaviorDescriptor.getType_id7wMoUFpfXoA.invoke(ListSequence.fromList(pDeclarations).getElement(start)) != Parameter__BehaviorDescriptor.getType_id7wMoUFpfEPe.invoke(ListSequence.fromList(sigs).getElement(start))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(call, "mismatching signature", "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618827754379", null, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(call, errorMsg, "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "4591387062079638188", null, errorTarget);
         }
       }
+      start++;
     }
   }
   public SAbstractConcept getApplicableConcept() {

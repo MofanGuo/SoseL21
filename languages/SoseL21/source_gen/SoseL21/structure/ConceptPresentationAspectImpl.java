@@ -17,28 +17,30 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BolleanReturn;
   private ConceptPresentation props_Boolean;
   private ConceptPresentation props_BooleanExpression;
+  private ConceptPresentation props_BooleanLetter;
   private ConceptPresentation props_BooleanParam;
   private ConceptPresentation props_BooleanReference;
-  private ConceptPresentation props_BooleanResult;
   private ConceptPresentation props_CallFunction;
   private ConceptPresentation props_Class;
-  private ConceptPresentation props_Constructor;
+  private ConceptPresentation props_ClassCallFunction;
+  private ConceptPresentation props_ClassConstructor;
   private ConceptPresentation props_Declaration;
-  private ConceptPresentation props_DeclarationBool;
-  private ConceptPresentation props_DeclarationInteger;
   private ConceptPresentation props_Divide;
   private ConceptPresentation props_Expression;
   private ConceptPresentation props_ExpressionStatementContent;
   private ConceptPresentation props_For;
   private ConceptPresentation props_Function;
+  private ConceptPresentation props_FunctionBool;
+  private ConceptPresentation props_FunctionInteger;
   private ConceptPresentation props_Greater;
   private ConceptPresentation props_GreaterEqual;
   private ConceptPresentation props_IBlock;
   private ConceptPresentation props_IStatementContent;
   private ConceptPresentation props_IfElse;
-  private ConceptPresentation props_Instantiation;
+  private ConceptPresentation props_Initializor;
   private ConceptPresentation props_Integer;
   private ConceptPresentation props_IntegerExpression;
+  private ConceptPresentation props_IntegerLetter;
   private ConceptPresentation props_IntegerParam;
   private ConceptPresentation props_IntegerReference;
   private ConceptPresentation props_IntegerReturn;
@@ -47,7 +49,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Minus;
   private ConceptPresentation props_Multiply;
   private ConceptPresentation props_NotEqual;
-  private ConceptPresentation props_NumberResult;
+  private ConceptPresentation props_Object;
   private ConceptPresentation props_Parameter;
   private ConceptPresentation props_ParenExpression;
   private ConceptPresentation props_Plus;
@@ -102,7 +104,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BolleanReturn:
         if (props_BolleanReturn == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("BolleanReturn");
+          cpb.rawPresentation("return with bool");
           props_BolleanReturn = cpb.create();
         }
         return props_BolleanReturn;
@@ -119,6 +121,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BooleanExpression = cpb.create();
         }
         return props_BooleanExpression;
+      case LanguageConceptSwitch.BooleanLetter:
+        if (props_BooleanLetter == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BooleanLetter");
+          props_BooleanLetter = cpb.create();
+        }
+        return props_BooleanLetter;
       case LanguageConceptSwitch.BooleanParam:
         if (props_BooleanParam == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -133,13 +142,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BooleanReference = cpb.create();
         }
         return props_BooleanReference;
-      case LanguageConceptSwitch.BooleanResult:
-        if (props_BooleanResult == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("BooleanResult");
-          props_BooleanResult = cpb.create();
-        }
-        return props_BooleanResult;
       case LanguageConceptSwitch.CallFunction:
         if (props_CallFunction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -154,33 +156,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Class = cpb.create();
         }
         return props_Class;
-      case LanguageConceptSwitch.Constructor:
-        if (props_Constructor == null) {
+      case LanguageConceptSwitch.ClassCallFunction:
+        if (props_ClassCallFunction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Constructor = cpb.create();
+          props_ClassCallFunction = cpb.create();
         }
-        return props_Constructor;
+        return props_ClassCallFunction;
+      case LanguageConceptSwitch.ClassConstructor:
+        if (props_ClassConstructor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ClassConstructor = cpb.create();
+        }
+        return props_ClassConstructor;
       case LanguageConceptSwitch.Declaration:
         if (props_Declaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           props_Declaration = cpb.create();
         }
         return props_Declaration;
-      case LanguageConceptSwitch.DeclarationBool:
-        if (props_DeclarationBool == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("DeclarationBool");
-          props_DeclarationBool = cpb.create();
-        }
-        return props_DeclarationBool;
-      case LanguageConceptSwitch.DeclarationInteger:
-        if (props_DeclarationInteger == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("DeclarationInteger");
-          props_DeclarationInteger = cpb.create();
-        }
-        return props_DeclarationInteger;
       case LanguageConceptSwitch.Divide:
         if (props_Divide == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -215,6 +210,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Function = cpb.create();
         }
         return props_Function;
+      case LanguageConceptSwitch.FunctionBool:
+        if (props_FunctionBool == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("call bool param");
+          props_FunctionBool = cpb.create();
+        }
+        return props_FunctionBool;
+      case LanguageConceptSwitch.FunctionInteger:
+        if (props_FunctionInteger == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("call integer param");
+          props_FunctionInteger = cpb.create();
+        }
+        return props_FunctionInteger;
       case LanguageConceptSwitch.Greater:
         if (props_Greater == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -248,13 +257,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IfElse = cpb.create();
         }
         return props_IfElse;
-      case LanguageConceptSwitch.Instantiation:
-        if (props_Instantiation == null) {
+      case LanguageConceptSwitch.Initializor:
+        if (props_Initializor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Instantiation = cpb.create();
+          props_Initializor = cpb.create();
         }
-        return props_Instantiation;
+        return props_Initializor;
       case LanguageConceptSwitch.Integer:
         if (props_Integer == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -268,6 +277,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IntegerExpression = cpb.create();
         }
         return props_IntegerExpression;
+      case LanguageConceptSwitch.IntegerLetter:
+        if (props_IntegerLetter == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("IntegerLetter");
+          props_IntegerLetter = cpb.create();
+        }
+        return props_IntegerLetter;
       case LanguageConceptSwitch.IntegerParam:
         if (props_IntegerParam == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -285,7 +301,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.IntegerReturn:
         if (props_IntegerReturn == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("IntegerReturn");
+          cpb.rawPresentation("return with integer");
           props_IntegerReturn = cpb.create();
         }
         return props_IntegerReturn;
@@ -324,13 +340,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_NotEqual = cpb.create();
         }
         return props_NotEqual;
-      case LanguageConceptSwitch.NumberResult:
-        if (props_NumberResult == null) {
+      case LanguageConceptSwitch.Object:
+        if (props_Object == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("NumberResult");
-          props_NumberResult = cpb.create();
+          cpb.presentationByName();
+          props_Object = cpb.create();
         }
-        return props_NumberResult;
+        return props_Object;
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

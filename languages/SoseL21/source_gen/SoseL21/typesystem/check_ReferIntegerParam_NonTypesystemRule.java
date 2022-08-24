@@ -21,7 +21,7 @@ public class check_ReferIntegerParam_NonTypesystemRule extends AbstractNonTypesy
   public check_ReferIntegerParam_NonTypesystemRule() {
   }
   public void applyRule(final SNode refInt, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SNodeOperations.getParent(SLinkOperations.getTarget(refInt, LINKS.ref$mdbw)) != SNodeOperations.getNodeAncestor(refInt, CONCEPTS.Function$Up, false, false) && SNodeOperations.getParent(SLinkOperations.getTarget(refInt, LINKS.ref$mdbw)) != SNodeOperations.getNodeAncestor(refInt, CONCEPTS.Constructor$WJ, false, false)) {
+    if (SNodeOperations.getParent(SLinkOperations.getTarget(refInt, LINKS.ref$mdbw)) != SNodeOperations.getNodeAncestor(refInt, CONCEPTS.Function$Up, false, false) && SNodeOperations.getParent(SLinkOperations.getTarget(refInt, LINKS.ref$mdbw)) != SNodeOperations.getNodeAncestor(refInt, CONCEPTS.ClassConstructor$WJ, false, false)) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(refInt, "Referencing is out of scope", "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618827551844", null, errorTarget);
@@ -39,7 +39,7 @@ public class check_ReferIntegerParam_NonTypesystemRule extends AbstractNonTypesy
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Constructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.Constructor");
+    /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
     /*package*/ static final SConcept Function$Up = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, "SoseL21.structure.Function");
     /*package*/ static final SConcept ReferIntegerParam$2I = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9430a26L, "SoseL21.structure.ReferIntegerParam");
   }

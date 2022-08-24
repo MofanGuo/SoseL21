@@ -17,8 +17,8 @@ import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
-public final class DeclarationBool__BehaviorDescriptor extends BaseBHDescriptor {
-  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd671L, "SoseL21.structure.DeclarationBool");
+public final class FunctionInteger__BehaviorDescriptor extends BaseBHDescriptor {
+  private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd7a5L, "SoseL21.structure.FunctionInteger");
 
   public static final SMethod<Type> getType_id7wMoUFpfXoA = new SMethodBuilder<Type>(new SJavaCompoundTypeImpl(Type.class)).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).id("7wMoUFpfXoA").build();
 
@@ -28,10 +28,10 @@ public final class DeclarationBool__BehaviorDescriptor extends BaseBHDescriptor 
   }
 
   /*package*/ static Type getType_id7wMoUFpfXoA(@NotNull SNode __thisNode__) {
-    return Type.Boolean;
+    return Type.Integer;
   }
 
-  /*package*/ DeclarationBool__BehaviorDescriptor() {
+  /*package*/ FunctionInteger__BehaviorDescriptor() {
   }
 
   @Override

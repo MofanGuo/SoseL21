@@ -671,7 +671,7 @@
   </node>
   <node concept="13h7C7" id="7wMoUFpfXqn">
     <property role="3GE5qa" value="expressions.func" />
-    <ref role="13h7C2" to="b5gf:7wMoUFpfXpL" resolve="DeclarationBool" />
+    <ref role="13h7C2" to="b5gf:7wMoUFpfXpL" resolve="FunctionBool" />
     <node concept="13hLZK" id="7wMoUFpfXqo" role="13h7CW">
       <node concept="3clFbS" id="7wMoUFpfXqp" role="2VODD2" />
     </node>
@@ -694,7 +694,7 @@
   </node>
   <node concept="13h7C7" id="7wMoUFpfXuC">
     <property role="3GE5qa" value="expressions.func" />
-    <ref role="13h7C2" to="b5gf:7wMoUFpfXu_" resolve="DeclarationInteger" />
+    <ref role="13h7C2" to="b5gf:7wMoUFpfXu_" resolve="FunctionInteger" />
     <node concept="13hLZK" id="7wMoUFpfXuD" role="13h7CW">
       <node concept="3clFbS" id="7wMoUFpfXuE" role="2VODD2" />
     </node>
@@ -762,7 +762,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7wMoUFpg551">
-    <property role="3GE5qa" value="expressions.func" />
+    <property role="3GE5qa" value="expressions.func.class" />
     <ref role="13h7C2" to="b5gf:7wMoUFpg49D" resolve="Class" />
     <node concept="13hLZK" id="7wMoUFpg552" role="13h7CW">
       <node concept="3clFbS" id="7wMoUFpg553" role="2VODD2" />
@@ -791,7 +791,7 @@
       <property role="TrG5h" value="getConstructor" />
       <node concept="3Tm1VV" id="7wMoUFpg5Bf" role="1B3o_S" />
       <node concept="3Tqbb2" id="7wMoUFpg5EC" role="3clF45">
-        <ref role="ehGHo" to="b5gf:7wMoUFpg49u" resolve="Constructor" />
+        <ref role="ehGHo" to="b5gf:7wMoUFpg49u" resolve="ClassConstructor" />
       </node>
       <node concept="3clFbS" id="7wMoUFpg5Bh" role="3clF47">
         <node concept="2Gpval" id="7wMoUFpg5GK" role="3cqZAp">
@@ -806,7 +806,7 @@
           </node>
           <node concept="3clFbS" id="7wMoUFpg5GN" role="2LFqv$">
             <node concept="Jncv_" id="7wMoUFpg6ol" role="3cqZAp">
-              <ref role="JncvD" to="b5gf:7wMoUFpg49u" resolve="Constructor" />
+              <ref role="JncvD" to="b5gf:7wMoUFpg49u" resolve="ClassConstructor" />
               <node concept="2GrUjf" id="7wMoUFpg6rZ" role="JncvB">
                 <ref role="2Gs0qQ" node="7wMoUFpg5GL" resolve="state" />
               </node>
@@ -942,8 +942,8 @@
     </node>
   </node>
   <node concept="13h7C7" id="7wMoUFpgD4d">
-    <property role="3GE5qa" value="expressions.func" />
-    <ref role="13h7C2" to="b5gf:7wMoUFpg49u" resolve="Constructor" />
+    <property role="3GE5qa" value="expressions.func.class" />
+    <ref role="13h7C2" to="b5gf:7wMoUFpg49u" resolve="ClassConstructor" />
     <node concept="13hLZK" id="7wMoUFpgD4e" role="13h7CW">
       <node concept="3clFbS" id="7wMoUFpgD4f" role="2VODD2" />
     </node>

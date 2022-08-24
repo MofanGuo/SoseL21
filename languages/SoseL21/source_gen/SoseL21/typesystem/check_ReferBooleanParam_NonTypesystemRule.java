@@ -21,7 +21,7 @@ public class check_ReferBooleanParam_NonTypesystemRule extends AbstractNonTypesy
   public check_ReferBooleanParam_NonTypesystemRule() {
   }
   public void applyRule(final SNode rfbool, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SNodeOperations.getParent(SLinkOperations.getTarget(rfbool, LINKS.ref$qSh0)) != SNodeOperations.getNodeAncestor(rfbool, CONCEPTS.Function$Up, false, false) && SNodeOperations.getParent(SLinkOperations.getTarget(rfbool, LINKS.ref$qSh0)) != SNodeOperations.getNodeAncestor(rfbool, CONCEPTS.Constructor$WJ, false, false)) {
+    if (SNodeOperations.getParent(SLinkOperations.getTarget(rfbool, LINKS.ref$qSh0)) != SNodeOperations.getNodeAncestor(rfbool, CONCEPTS.Function$Up, false, false) && SNodeOperations.getParent(SLinkOperations.getTarget(rfbool, LINKS.ref$qSh0)) != SNodeOperations.getNodeAncestor(rfbool, CONCEPTS.ClassConstructor$WJ, false, false)) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(rfbool, "Referencing is out of scope", "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618827524537", null, errorTarget);
@@ -39,7 +39,7 @@ public class check_ReferBooleanParam_NonTypesystemRule extends AbstractNonTypesy
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Constructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.Constructor");
+    /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
     /*package*/ static final SConcept Function$Up = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, "SoseL21.structure.Function");
     /*package*/ static final SConcept ReferBooleanParam$oT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fdba2L, "SoseL21.structure.ReferBooleanParam");
   }

@@ -7,6 +7,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
@@ -23,11 +25,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class BooleanResult_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Object_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public BooleanResult_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Object_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -39,19 +41,25 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   /*package*/ EditorCell createCell() {
-    return createProperty_0();
+    return createCollection_0();
   }
 
+  private EditorCell createCollection_0() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_3ja71y_a");
+    editorCell.setBig(true);
+    setCellContext(editorCell);
+    editorCell.addEditorCell(createProperty_0());
+    return editorCell;
+  }
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.value$Fchw;
+      final SProperty property = PROPS.name$MnvL;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no value>");
-      editorCell.setCellId("property_value");
-      editorCell.setBig(true);
-      setCellContext(editorCell);
+      editorCell.setDefaultText("<no name>");
+      editorCell.setCellId("property_name");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
@@ -71,7 +79,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty value$Fchw = MetaAdapterFactory.getProperty(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c180d2L, 0x27886c5347c180d3L, "value");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class CONCEPTS {

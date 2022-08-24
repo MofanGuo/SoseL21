@@ -10,7 +10,6 @@ import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext;
 import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
-import jetbrains.mps.smodel.SNodePointer;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuPart;
 import org.jetbrains.mps.openapi.module.SModule;
 import org.jetbrains.mps.openapi.module.SRepository;
@@ -19,15 +18,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class GrammarCellsSubstituteMenu_Constructor extends SubstituteMenuBase {
-  public GrammarCellsSubstituteMenu_Constructor() {
+public class GrammarCellsSubstituteMenu_FunctionInteger extends SubstituteMenuBase {
+  public GrammarCellsSubstituteMenu_FunctionInteger() {
     super(true);
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new GrammarCellsSubstituteMenuPart_gf2h7z_a());
+    result.add(new GrammarCellsSubstituteMenuPart_j8auvp_a());
     return result;
   }
 
@@ -35,7 +34,7 @@ public class GrammarCellsSubstituteMenu_Constructor extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Constructor. Generated from implicit smart reference attribute.", new SNodePointer("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)", "8661094618827342430")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "FunctionInteger", null));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -44,18 +43,18 @@ public class GrammarCellsSubstituteMenu_Constructor extends SubstituteMenuBase {
   }
 
 
-  private class GrammarCellsSubstituteMenuPart_gf2h7z_a extends GrammarCellsSubstituteMenuPart {
+  private class GrammarCellsSubstituteMenuPart_j8auvp_a extends GrammarCellsSubstituteMenuPart {
     @Override
     public SModule getModule(SRepository repository) {
       return PersistenceFacade.getInstance().createModuleReference("553bdaad-1cb3-493b-accb-16ef149d741a(SoseL21)").resolve(repository);
     }
     @Override
     public SAbstractConcept getExpectedOutputConcept() {
-      return CONCEPTS.Constructor$WJ;
+      return CONCEPTS.FunctionInteger$ic;
     }
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Constructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.Constructor");
+    /*package*/ static final SConcept FunctionInteger$ic = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd7a5L, "SoseL21.structure.FunctionInteger");
   }
 }

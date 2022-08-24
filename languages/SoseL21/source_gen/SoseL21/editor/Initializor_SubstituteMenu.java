@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class Instantiation_SubstituteMenu extends SubstituteMenuBase {
+public class Initializor_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_y50xmt_a(), CONCEPTS.Instantiation$EV));
-    result.add(new SMP_Subconcepts_y50xmt_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_e14zlc_a(), CONCEPTS.Initializor$EV));
+    result.add(new SMP_Subconcepts_e14zlc_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class Instantiation_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Instantiation. Generated from implicit smart reference attribute.", new SNodePointer("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)", "3829283723931390594")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Initializor. Generated from implicit smart reference attribute.", new SNodePointer("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)", "3829283723931390594")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class Instantiation_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_y50xmt_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_e14zlc_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_y50xmt_a() {
+    public SMP_ReferenceScope_e14zlc_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.Instantiation$EV, LINKS.class$aw_B);
+      super((SAbstractConcept) CONCEPTS.Initializor$EV, LINKS.class$aw_B);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class Instantiation_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_y50xmt_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_e14zlc_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Instantiation$EV);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Initializor$EV);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Instantiation", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Initializor", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,7 +88,7 @@ public class Instantiation_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Instantiation$EV = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x352459422d1d9282L, "SoseL21.structure.Instantiation");
+    /*package*/ static final SConcept Initializor$EV = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x352459422d1d9282L, "SoseL21.structure.Initializor");
   }
 
   private static final class LINKS {

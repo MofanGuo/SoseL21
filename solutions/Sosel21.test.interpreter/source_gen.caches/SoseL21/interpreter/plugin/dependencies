@@ -29,15 +29,8 @@
   <uses module="c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)" kind="dp" />
   <uses module="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt+dp" />
-  <dependency className="SoseL21.interpreter.plugin.AllValues">
-    <classNode dependClassName="java.lang.Boolean" />
-    <classNode dependClassName="java.lang.Integer" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.LinkedList" />
-  </dependency>
   <dependency className="SoseL21.interpreter.plugin.EvalHelper">
-    <classNode dependClassName="SoseL21.interpreter.plugin.AllValues" />
+    <classNode dependClassName="SoseL21.plugin.SoselValue" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterEvaluationHelper" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Object" />
@@ -58,7 +51,7 @@
     <classNode extendsClassName="jetbrains.mps.smodel.structure.DefaultExtensionDescriptor" />
   </dependency>
   <dependency className="SoseL21.interpreter.plugin.InterpreterSMTestInterpreter">
-    <classNode dependClassName="SoseL21.interpreter.plugin.AllValues" />
+    <classNode dependClassName="SoseL21.plugin.SoselValue" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ComputationTrace" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
     <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo" />

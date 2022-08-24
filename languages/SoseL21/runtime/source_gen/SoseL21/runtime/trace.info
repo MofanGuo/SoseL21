@@ -1,40 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
   <root nodeRef="r:a97b26ad-3680-4d03-9b3d-da316f75e7a5(SoseL21.runtime)/5956875130661258186">
     <file name="map_toJavaCode.java">
-      <node id="8661094618824669525" at="7,0,8,0" concept="0" />
-      <node id="8661094618824669565" at="8,0,9,0" concept="0" trace="a" />
-      <node id="8661094618824669668" at="9,0,10,0" concept="0" trace="val1" />
-      <node id="8661094618825043454" at="10,0,11,0" concept="0" />
-      <node id="8661094618825043506" at="11,0,12,0" concept="0" />
-      <node id="8661094618825042645" at="12,0,13,0" concept="0" />
-      <node id="8661094618824669525" at="13,0,14,0" concept="0" />
-      <node id="8661094618824669565" at="14,0,15,0" concept="0" trace="a" />
-      <node id="8661094618824669668" at="15,0,16,0" concept="0" trace="val1" />
-      <node id="8661094618825043454" at="16,0,17,0" concept="0" />
-      <node id="8661094618825043506" at="17,0,18,0" concept="0" />
-      <node id="8661094618825042645" at="18,0,19,0" concept="0" />
-      <unit id="5956875130661258186" at="6,0,21,0" name="SoseL21.runtime.map_toJavaCode" />
+      <unit id="5956875130661258186" at="6,0,10,0" name="SoseL21.runtime.map_toJavaCode" />
     </file>
   </root>
   <root nodeRef="r:a97b26ad-3680-4d03-9b3d-da316f75e7a5(SoseL21.runtime)/8661094618825043540">
     <file name="map_toJavaCode.java">
-      <node id="4251427785429923179" at="7,0,8,0" concept="0" trace="test_int_1" />
-      <node id="4251427785429923198" at="8,0,9,0" concept="0" trace="test_int_2" />
-      <node id="4251427785429923220" at="9,0,10,0" concept="0" trace="test_bool" />
-      <node id="4251427785429923440" at="10,0,11,0" concept="0" />
-      <node id="3355169069267826873" at="11,0,12,0" concept="0" />
-      <node id="3355169069266155473" at="12,0,13,0" concept="0" trace="or" />
-      <node id="3355169069267326713" at="13,0,14,0" concept="0" trace="myDog" />
-      <node id="4251427785429923179" at="14,0,15,0" concept="0" trace="test_int_1" />
-      <node id="4251427785429923198" at="15,0,16,0" concept="0" trace="test_int_2" />
-      <node id="4251427785429923220" at="16,0,17,0" concept="0" trace="test_bool" />
-      <node id="4251427785429923440" at="17,0,18,0" concept="0" />
-      <node id="3355169069267826873" at="18,0,19,0" concept="0" />
-      <node id="3355169069266155473" at="19,0,20,0" concept="0" trace="or" />
-      <node id="3355169069267326713" at="20,0,21,0" concept="0" trace="myDog" />
-      <unit id="8661094618825043540" at="6,0,23,0" name="SoseL21.runtime.map_toJavaCode" />
+      <unit id="8661094618825043540" at="6,0,10,0" name="SoseL21.runtime.map_toJavaCode" />
     </file>
   </root>
 </debug-info>

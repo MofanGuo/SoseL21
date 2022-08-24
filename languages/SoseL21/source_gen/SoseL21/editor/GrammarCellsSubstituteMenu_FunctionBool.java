@@ -18,15 +18,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class GrammarCellsSubstituteMenu_DeclarationBool extends SubstituteMenuBase {
-  public GrammarCellsSubstituteMenu_DeclarationBool() {
+public class GrammarCellsSubstituteMenu_FunctionBool extends SubstituteMenuBase {
+  public GrammarCellsSubstituteMenu_FunctionBool() {
     super(true);
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new GrammarCellsSubstituteMenuPart_814yno_a());
+    result.add(new GrammarCellsSubstituteMenuPart_qihngf_a());
     return result;
   }
 
@@ -34,7 +34,7 @@ public class GrammarCellsSubstituteMenu_DeclarationBool extends SubstituteMenuBa
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "DeclarationBool", null));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("contribution to the " + "default substitute menu for " + "FunctionBool", null));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -43,18 +43,18 @@ public class GrammarCellsSubstituteMenu_DeclarationBool extends SubstituteMenuBa
   }
 
 
-  private class GrammarCellsSubstituteMenuPart_814yno_a extends GrammarCellsSubstituteMenuPart {
+  private class GrammarCellsSubstituteMenuPart_qihngf_a extends GrammarCellsSubstituteMenuPart {
     @Override
     public SModule getModule(SRepository repository) {
       return PersistenceFacade.getInstance().createModuleReference("553bdaad-1cb3-493b-accb-16ef149d741a(SoseL21)").resolve(repository);
     }
     @Override
     public SAbstractConcept getExpectedOutputConcept() {
-      return CONCEPTS.DeclarationBool$EG;
+      return CONCEPTS.FunctionBool$EG;
     }
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept DeclarationBool$EG = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd671L, "SoseL21.structure.DeclarationBool");
+    /*package*/ static final SConcept FunctionBool$EG = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fd671L, "SoseL21.structure.FunctionBool");
   }
 }

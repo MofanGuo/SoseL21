@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class Constructor_SubstituteMenu extends SubstituteMenuBase {
+public class ClassConstructor_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_tl2hi7_a(), CONCEPTS.Constructor$WJ));
-    result.add(new SMP_Subconcepts_tl2hi7_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_61t2ob_a(), CONCEPTS.ClassConstructor$WJ));
+    result.add(new SMP_Subconcepts_61t2ob_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class Constructor_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Constructor. Generated from implicit smart reference attribute.", new SNodePointer("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)", "8661094618827342430")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for ClassConstructor. Generated from implicit smart reference attribute.", new SNodePointer("r:554ad234-72c0-4aee-a191-8041fbe202c4(SoseL21.structure)", "8661094618827342430")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class Constructor_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_tl2hi7_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_61t2ob_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_tl2hi7_a() {
+    public SMP_ReferenceScope_61t2ob_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.Constructor$WJ, LINKS.class$wtp2);
+      super((SAbstractConcept) CONCEPTS.ClassConstructor$WJ, LINKS.class$wtp2);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class Constructor_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_tl2hi7_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_61t2ob_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Constructor$WJ);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.ClassConstructor$WJ);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Constructor", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "ClassConstructor", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,7 +88,7 @@ public class Constructor_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Constructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.Constructor");
+    /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
   }
 
   private static final class LINKS {
