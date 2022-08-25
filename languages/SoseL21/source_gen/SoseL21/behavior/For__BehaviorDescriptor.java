@@ -36,7 +36,7 @@ public final class For__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static Iterable<SNode> getNodes_id5nad63GG6Qy(@NotNull SNode __thisNode__) {
     Deque<SNode> nodes = LinkedListSequence.fromLinkedListNew(new LinkedList<SNode>());
     LinkedListSequence.fromLinkedListNew(nodes).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.int$G$dq));
-    LinkedListSequence.fromLinkedListNew(nodes).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.addUp$GELQ));
+    LinkedListSequence.fromLinkedListNew(nodes).pushElement(SLinkOperations.getTarget(__thisNode__, LINKS.increment$GELQ));
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.body$GFHU)).concat(LinkedListSequence.fromLinkedListNew(nodes));
   }
 
@@ -88,7 +88,7 @@ public final class For__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink int$G$dq = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98b7L, "int");
-    /*package*/ static final SContainmentLink addUp$GELQ = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98beL, "addUp");
+    /*package*/ static final SContainmentLink increment$GELQ = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98beL, "increment");
     /*package*/ static final SContainmentLink body$GFHU = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98c2L, "body");
   }
 }

@@ -83,6 +83,7 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
   <dependency className="SoseL21.constraints.IntegerReference_Constraints">
+    <classNode dependClassName="SoseL21.behavior.ClassCallFunction__BehaviorDescriptor" />
     <classNode dependClassName="SoseL21.behavior.ClassConstructor__BehaviorDescriptor" />
     <classNode dependClassName="SoseL21.behavior.Class__BehaviorDescriptor" />
     <classNode dependClassName="SoseL21.behavior.For__BehaviorDescriptor" />

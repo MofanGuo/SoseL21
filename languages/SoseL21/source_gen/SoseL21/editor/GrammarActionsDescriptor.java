@@ -90,7 +90,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
                   if (isApplicable) {
-                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.expr$_J0y).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
+                    List<SubstituteMenuItem> actions = _context.withLink(LINKS.expression$_J0y).createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(_context.getEditorContext().getRepository()), wrappedConcept));
                     List<SubstituteMenuItem> wrappedActions = ListSequence.fromList(actions).where(new IWhereFilter<SubstituteMenuItem>() {
                       public boolean accept(SubstituteMenuItem it) {
                         boolean isApplicable = true;
@@ -115,7 +115,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                             wrappedNode = nodeToWrap;
                             // use setupNode after setting wrapped element to allow access to the wrapped element in node factories
                             SNode wrapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(outputConcept));
-                            SLinkOperations.setTarget(wrapper, LINKS.expr$_J0y, SNodeOperations.cast(nodeToWrap, CONCEPTS.Expression$Yb));
+                            SLinkOperations.setTarget(wrapper, LINKS.expression$_J0y, SNodeOperations.cast(nodeToWrap, CONCEPTS.Expression$Yb));
                             NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
                             return wrapper;
@@ -654,7 +654,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                                 String matchingText = getMatchingText(pattern);
                                 SNode wrapper = SNodeOperations.cast(SNodeFactoryOperations.createNewNode(subconcept, null), CONCEPTS.ExpressionStatementContent$5s);
                                 SNodeOperations.replaceWithAnother(sourceNode, wrapper);
-                                SLinkOperations.setTarget(wrapper, LINKS.expr$_J0y, SNodeOperations.cast(sourceNode, CONCEPTS.Expression$Yb));
+                                SLinkOperations.setTarget(wrapper, LINKS.expression$_J0y, SNodeOperations.cast(sourceNode, CONCEPTS.Expression$Yb));
 
 
                                 SNode newChild = ListSequence.fromList(SNodeOperations.getChildren(wrapper)).findFirst(new IWhereFilter<SNode>() {
@@ -1267,7 +1267,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           private List<ISymbol> symbols = ListSequence.fromList(new ArrayList<ISymbol>());
           {
             ListSequence.fromList(symbols).addElement(new ConstantSymbol("("));
-            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.paren$dz_l));
+            ListSequence.fromList(symbols).addElement(new ChildSymbol(LINKS.expression$dz_l));
             ListSequence.fromList(symbols).addElement(new ConstantSymbol(")"));
             symbols = ListSequence.fromList(symbols).where(new IWhereFilter<ISymbol>() {
               public boolean accept(ISymbol it) {
@@ -1380,12 +1380,12 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink expr$_J0y = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, 0x403c8839c2edc927L, "expr");
+    /*package*/ static final SContainmentLink expression$_J0y = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, 0x403c8839c2edc927L, "expression");
     /*package*/ static final SContainmentLink first$oXey = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6750519L, 0x52ab125ed67507dcL, "first");
     /*package*/ static final SContainmentLink second$p2BT = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6750519L, 0x52ab125ed67507deL, "second");
     /*package*/ static final SContainmentLink first$1VSY = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c15db5L, 0x27886c5347c16539L, "first");
     /*package*/ static final SContainmentLink second$1Wn0 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x27886c5347c15db5L, 0x27886c5347c1653bL, "second");
-    /*package*/ static final SContainmentLink paren$dz_l = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b28a7L, 0x52ab125ed67b28a8L, "paren");
+    /*package*/ static final SContainmentLink expression$dz_l = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed67b28a7L, 0x52ab125ed67b28a8L, "expression");
   }
 
   private static final class PROPS {

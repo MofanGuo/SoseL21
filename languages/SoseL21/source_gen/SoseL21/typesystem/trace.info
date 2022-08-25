@@ -24,8 +24,8 @@
     </file>
     <file name="check_SoSeWorksheet_NonTypesystemRule.java">
       <node id="8661094618824194359" at="26,37,27,84" concept="6" />
-      <node id="8661094618824215496" at="29,7,30,204" concept="5" />
-      <node id="235631158291937826" at="30,204,31,53" concept="5" />
+      <node id="8661094618824215496" at="29,7,30,88" concept="5" />
+      <node id="8661094618824217905" at="30,88,31,130" concept="2" />
       <node id="8661094618824227565" at="33,7,34,66" concept="5" />
       <node id="8661094618824227565" at="34,66,35,255" concept="5" />
       <node id="8661094618824176649" at="39,50,40,37" concept="6" />
@@ -40,9 +40,9 @@
       <node id="8661094618824176649" at="39,0,42,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8661094618824176649" at="42,0,45,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8661094618824176649" at="45,0,48,0" concept="4" trace="overrides#()Z" />
-      <node id="8661094618824227565" at="32,22,36,7" concept="0" />
+      <node id="8661094618824227565" at="32,49,36,7" concept="0" />
       <node id="8661094618824176667" at="24,115,29,7" concept="5" />
-      <node id="8661094618824220738" at="31,53,37,5" concept="3" />
+      <node id="8661094618824220738" at="31,130,37,5" concept="3" />
       <node id="8661094618824176649" at="24,0,39,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="8661094618824176649" at="22,50,22,50" />
       <scope id="8661094618824194069" at="26,37,27,84" />
@@ -62,11 +62,10 @@
         <var name="argument" id="8661094618824176649" />
       </scope>
       <scope id="8661094618824176649" at="45,0,48,0" />
-      <scope id="8661094618824220740" at="32,22,36,7" />
+      <scope id="8661094618824220740" at="32,49,36,7" />
       <scope id="8661094618824176650" at="24,115,37,5">
         <var name="expr" id="8661094618824176670" />
         <var name="ref" id="8661094618824215499" />
-        <var name="refSize" id="235631158291937829" />
       </scope>
       <scope id="8661094618824176649" at="24,0,39,0">
         <var name="status" id="8661094618824176649" />

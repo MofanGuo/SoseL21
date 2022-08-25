@@ -58,7 +58,7 @@ public final class ExpressionEvaluation_Intention extends AbstractIntentionDescr
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      String eval = EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.expr$_J0y));
+      String eval = EvalHelper.eval(SLinkOperations.getTarget(node, LINKS.expression$_J0y));
       Messages.showInfoMessage(eval, "Interpreted");
       LoggingRuntime.logMsgView(Level.INFO, "Interpreted" + eval, ExpressionEvaluation_Intention.class, null, null);
     }
@@ -78,6 +78,6 @@ public final class ExpressionEvaluation_Intention extends AbstractIntentionDescr
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink expr$_J0y = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, 0x403c8839c2edc927L, "expr");
+    /*package*/ static final SContainmentLink expression$_J0y = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x403c8839c2edc924L, 0x403c8839c2edc927L, "expression");
   }
 }

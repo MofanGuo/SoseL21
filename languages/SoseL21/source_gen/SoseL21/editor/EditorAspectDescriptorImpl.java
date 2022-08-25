@@ -154,7 +154,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 12:
         return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_Class());
       case 13:
-        return Collections.<SubstituteMenu>singletonList(new GrammarCellsSubstituteMenu_ClassCallFunction());
+        return Arrays.asList(new SubstituteMenu[]{new ClassCallFunction_SubstituteMenu(), new GrammarCellsSubstituteMenu_ClassCallFunction()});
       case 14:
         return Arrays.asList(new SubstituteMenu[]{new ClassConstructor_SubstituteMenu(), new GrammarCellsSubstituteMenu_ClassConstructor()});
       case 15:

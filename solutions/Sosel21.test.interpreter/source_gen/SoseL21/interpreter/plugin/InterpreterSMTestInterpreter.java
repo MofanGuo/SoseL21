@@ -76,7 +76,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           SoselValue.Value<Integer> values = SoselValue.findInt();
-          return values.getValue(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.reference$N7MS), PROPS.name$MnvL));
+          return values.getValue(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$N7MS), PROPS.name$MnvL));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -137,8 +137,8 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           SoselValue.Value<Integer> values = SoselValue.findInt();
-          int value = (int) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.intValue$WQj4), context, coverage, trace, false);
-          values.setValue(false, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.reference$WPP2), LINKS.reference$N7MS), PROPS.name$MnvL), value);
+          int value = (int) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.value$WQj4), context, coverage, trace, false);
+          values.setValue(false, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.ref$WPP2), LINKS.ref$N7MS), PROPS.name$MnvL), value);
           return null;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -257,8 +257,8 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          boolean value = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.booleanValue$R_4p), context, coverage, trace, false);
-          SoselValue.findBool().setValue(false, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.reference$RvF2), LINKS.reference$ZtkH), PROPS.name$MnvL), value);
+          boolean value = (boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.value$R_4p), context, coverage, trace, false);
+          SoselValue.findBool().setValue(false, SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(node, LINKS.ref$RvF2), LINKS.ref$ZtkH), PROPS.name$MnvL), value);
           return null;
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -348,7 +348,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return SoselValue.findBool().getValue(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.reference$ZtkH), PROPS.name$MnvL));
+          return SoselValue.findBool().getValue(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.ref$ZtkH), PROPS.name$MnvL));
         } catch (StopAndReturnException stop) {
           return stop.value();
         } catch (InterpreterEscapeException ex) {
@@ -846,7 +846,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
               SNode currentNode = itr.next();
               context.getRootInterpreter().evaluate(currentNode, context, coverage, trace, false);
             }
-            context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.addUp$GELQ), context, coverage, trace, false);
+            context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.increment$GELQ), context, coverage, trace, false);
             myCond = ((boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.bool$G_9u), context, coverage, trace, false));
           }
           SoselValue.removeValue();
@@ -947,13 +947,13 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink contents$WUQ2 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414bf7d02L, 0xbfd127414bf7d05L, "contents");
-    /*package*/ static final SReferenceLink reference$N7MS = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, 0x403c8839c2e84ddeL, "reference");
-    /*package*/ static final SContainmentLink intValue$WQj4 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6705413L, 0x52ab125ed6705418L, "intValue");
-    /*package*/ static final SContainmentLink reference$WPP2 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6705413L, 0x52ab125ed6705416L, "reference");
+    /*package*/ static final SReferenceLink ref$N7MS = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, 0x403c8839c2e84ddeL, "ref");
+    /*package*/ static final SContainmentLink value$WQj4 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6705413L, 0x52ab125ed6705418L, "value");
+    /*package*/ static final SContainmentLink ref$WPP2 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6705413L, 0x52ab125ed6705416L, "ref");
     /*package*/ static final SContainmentLink value$$dNu = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c1ae46L, 0x783263aad9178630L, "value");
-    /*package*/ static final SContainmentLink booleanValue$R_4p = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed673d8ffL, 0x52ab125ed673d904L, "booleanValue");
-    /*package*/ static final SContainmentLink reference$RvF2 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed673d8ffL, 0x52ab125ed673d902L, "reference");
-    /*package*/ static final SReferenceLink reference$ZtkH = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, 0x403c8839c2e7a258L, "reference");
+    /*package*/ static final SContainmentLink value$R_4p = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed673d8ffL, 0x52ab125ed673d904L, "value");
+    /*package*/ static final SContainmentLink ref$RvF2 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed673d8ffL, 0x52ab125ed673d902L, "ref");
+    /*package*/ static final SReferenceLink ref$ZtkH = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, 0x403c8839c2e7a258L, "ref");
     /*package*/ static final SReferenceLink ref$mdbw = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9430a26L, 0x783263aad9430a27L, "ref");
     /*package*/ static final SReferenceLink ref$qSh0 = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93fdba2L, 0x783263aad93fdba3L, "ref");
     /*package*/ static final SContainmentLink first$oXey = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x52ab125ed6750519L, 0x52ab125ed67507dcL, "first");
@@ -973,7 +973,7 @@ public class InterpreterSMTestInterpreter extends InterpreterBase {
     /*package*/ static final SContainmentLink int$G$dq = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98b7L, "int");
     /*package*/ static final SContainmentLink bool$G_9u = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98bbL, "bool");
     /*package*/ static final SContainmentLink body$GFHU = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98c2L, "body");
-    /*package*/ static final SContainmentLink addUp$GELQ = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98beL, "addUp");
+    /*package*/ static final SContainmentLink increment$GELQ = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98beL, "increment");
   }
 
   private static final class CONCEPTS {

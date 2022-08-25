@@ -25,6 +25,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import SoseL21.behavior.Function__BehaviorDescriptor;
 import SoseL21.behavior.Class__BehaviorDescriptor;
 import SoseL21.behavior.ClassConstructor__BehaviorDescriptor;
+import SoseL21.behavior.ClassCallFunction__BehaviorDescriptor;
 import jetbrains.mps.scope.ListScope;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -37,7 +38,7 @@ public class IntegerReference_Constraints extends BaseConstraintsDescriptor {
 
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
-    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.reference$N7MS, this, true, false) {
+    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.ref$N7MS, this, true, false) {
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
@@ -93,6 +94,12 @@ public class IntegerReference_Constraints extends BaseConstraintsDescriptor {
                   nodes = Sequence.fromIterable(nodes).concat(ListSequence.fromList(SoSeWorksheet__BehaviorDescriptor.getNodes_idd58kCZRj__.invoke(thisSoSeWorksheet)));
                 }
               }
+              {
+                final SNode thisClassCallFunction = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisClassCallFunction, CONCEPTS.ClassCallFunction$fu)) {
+                  nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(ClassCallFunction__BehaviorDescriptor.getNodes_id10qumxRAT$K.invoke(thisClassCallFunction)));
+                }
+              }
               getBackNode = SNodeOperations.getParent(getBackNode);
             } while ((getBackNode != null));
             return ListScope.forNamedElements(SNodeOperations.ofConcept(nodes, CONCEPTS.Integer$xv));
@@ -114,10 +121,11 @@ public class IntegerReference_Constraints extends BaseConstraintsDescriptor {
     /*package*/ static final SConcept Function$Up = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93eaaa4L, "SoseL21.structure.Function");
     /*package*/ static final SConcept Class$cf = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L, "SoseL21.structure.Class");
     /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
+    /*package*/ static final SConcept ClassCallFunction$fu = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x3fb7e234ed94e3e8L, "SoseL21.structure.ClassCallFunction");
     /*package*/ static final SConcept Integer$xv = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c0f1f7L, "SoseL21.structure.Integer");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink reference$N7MS = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, 0x403c8839c2e84ddeL, "reference");
+    /*package*/ static final SReferenceLink ref$N7MS = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, 0x403c8839c2e84ddeL, "ref");
   }
 }

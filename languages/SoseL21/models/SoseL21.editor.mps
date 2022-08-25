@@ -120,7 +120,6 @@
     </language>
   </registry>
   <node concept="24kQdi" id="JX4BgkJROe">
-    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:JX4BgkJRO2" resolve="SoSeWorksheet" />
     <node concept="3EZMnI" id="JX4BgkJSy9" role="2wV5jI">
       <node concept="3EZMnI" id="JX4BgkJSyg" role="3EZMnx">
@@ -193,36 +192,47 @@
   <node concept="24kQdi" id="40Wy3B2TU9z">
     <property role="3GE5qa" value="expressions.boolean" />
     <ref role="1XX52x" to="b5gf:lgOxMab$CY" resolve="BooleanReference" />
-    <node concept="1iCGBv" id="40Wy3B2UHE0" role="2wV5jI">
-      <ref role="1NtTu8" to="b5gf:40Wy3B2TU9o" resolve="reference" />
-      <node concept="1sVBvm" id="40Wy3B2UHE2" role="1sWHZn">
-        <node concept="3F0A7n" id="40Wy3B2UHEc" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="10qumxR_eyP" role="2wV5jI">
+      <node concept="3F0ifn" id="10qumxR_ezg" role="3EZMnx">
+        <property role="3F0ifm" value="ref" />
+      </node>
+      <node concept="1iCGBv" id="10qumxR_eyW" role="3EZMnx">
+        <ref role="1NtTu8" to="b5gf:40Wy3B2TU9o" resolve="ref" />
+        <node concept="1sVBvm" id="10qumxR_eyY" role="1sWHZn">
+          <node concept="3F0A7n" id="10qumxR_ez8" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
         </node>
       </node>
+      <node concept="l2Vlx" id="10qumxR_eyS" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="40Wy3B2U4RB">
     <property role="3GE5qa" value="expressions.integer" />
     <ref role="1XX52x" to="b5gf:JX4BgkKGIh" resolve="IntegerReference" />
-    <node concept="1iCGBv" id="40Wy3B2UHEr" role="2wV5jI">
-      <ref role="1NtTu8" to="b5gf:40Wy3B2U4Ru" resolve="reference" />
-      <node concept="1sVBvm" id="40Wy3B2UHEt" role="1sWHZn">
-        <node concept="3F0A7n" id="40Wy3B2UHEB" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="10qumxRzMb3" role="2wV5jI">
+      <node concept="3F0ifn" id="10qumxRzMbu" role="3EZMnx">
+        <property role="3F0ifm" value="ref" />
+      </node>
+      <node concept="1iCGBv" id="10qumxRzMba" role="3EZMnx">
+        <ref role="1NtTu8" to="b5gf:40Wy3B2U4Ru" resolve="ref" />
+        <node concept="1sVBvm" id="10qumxRzMbc" role="1sWHZn">
+          <node concept="3F0A7n" id="10qumxRzMbm" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
         </node>
       </node>
+      <node concept="l2Vlx" id="10qumxRzMb6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="40Wy3B2Vs$K">
-    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:40Wy3B2Vs$$" resolve="ExpressionStatementContent" />
     <node concept="3EZMnI" id="5aF4_VmsF4P" role="2wV5jI">
       <node concept="1kIj98" id="5aF4_VmsF4W" role="3EZMnx">
         <node concept="3F1sOY" id="5aF4_VmsF55" role="1kIj9b">
-          <ref role="1NtTu8" to="b5gf:40Wy3B2Vs$B" resolve="expr" />
+          <ref role="1NtTu8" to="b5gf:40Wy3B2Vs$B" resolve="expression" />
         </node>
       </node>
       <node concept="3F0ifn" id="2u8r5d7FFOg" role="3EZMnx">
@@ -243,13 +253,13 @@
     <ref role="1XX52x" to="b5gf:5aF4_Vms5gj" resolve="AssignInteger" />
     <node concept="3EZMnI" id="5aF4_VmsXzl" role="2wV5jI">
       <node concept="3F1sOY" id="5aF4_VmsXzs" role="3EZMnx">
-        <ref role="1NtTu8" to="b5gf:5aF4_Vms5gm" resolve="reference" />
+        <ref role="1NtTu8" to="b5gf:5aF4_Vms5gm" resolve="ref" />
       </node>
       <node concept="3F0ifn" id="5aF4_VmsXzy" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="5aF4_VmsXzJ" role="3EZMnx">
-        <ref role="1NtTu8" to="b5gf:5aF4_Vms5go" resolve="intValue" />
+        <ref role="1NtTu8" to="b5gf:5aF4_Vms5go" resolve="value" />
       </node>
       <node concept="3F0ifn" id="5aF4_VmsXzT" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -262,13 +272,13 @@
     <ref role="1XX52x" to="b5gf:5aF4_VmsXzZ" resolve="AssignBoolean" />
     <node concept="3EZMnI" id="5aF4_VmsX$m" role="2wV5jI">
       <node concept="3F1sOY" id="5aF4_VmsX$t" role="3EZMnx">
-        <ref role="1NtTu8" to="b5gf:5aF4_VmsX$2" resolve="reference" />
+        <ref role="1NtTu8" to="b5gf:5aF4_VmsX$2" resolve="ref" />
       </node>
       <node concept="3F0ifn" id="5aF4_VmsX$z" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="5aF4_VmsX$P" role="3EZMnx">
-        <ref role="1NtTu8" to="b5gf:5aF4_VmsX$4" resolve="booleanValue" />
+        <ref role="1NtTu8" to="b5gf:5aF4_VmsX$4" resolve="value" />
       </node>
       <node concept="3F0ifn" id="5aF4_Vmw3o4" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -320,7 +330,7 @@
           <property role="3F0ifm" value="(" />
         </node>
         <node concept="3F1sOY" id="5aF4_VmuMzh" role="drBAU">
-          <ref role="1NtTu8" to="b5gf:5aF4_VmuMyC" resolve="paren" />
+          <ref role="1NtTu8" to="b5gf:5aF4_VmuMyC" resolve="expression" />
         </node>
         <node concept="3F0ifn" id="5aF4_VmuMzj" role="drBAZ">
           <property role="3F0ifm" value=")" />
@@ -383,7 +393,6 @@
     </node>
   </node>
   <node concept="24kQdi" id="7wMoUFpfyRs">
-    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:7wMoUFpeTyL" resolve="For" />
     <node concept="3EZMnI" id="7wMoUFpfz3I" role="2wV5jI">
       <node concept="3EZMnI" id="7wMoUFpfz3P" role="3EZMnx">
@@ -404,7 +413,7 @@
           <property role="3F0ifm" value=";" />
         </node>
         <node concept="3F1sOY" id="7wMoUFpfz5a" role="3EZMnx">
-          <ref role="1NtTu8" to="b5gf:7wMoUFpeTyY" resolve="addUp" />
+          <ref role="1NtTu8" to="b5gf:7wMoUFpeTyY" resolve="increment" />
         </node>
         <node concept="3F0ifn" id="7wMoUFpfz5z" role="3EZMnx">
           <property role="3F0ifm" value="){" />
@@ -422,7 +431,6 @@
     </node>
   </node>
   <node concept="24kQdi" id="7wMoUFpfz6t">
-    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:7wMoUFpfz67" resolve="IfElse" />
     <node concept="3EZMnI" id="7wMoUFpfD0o" role="2wV5jI">
       <node concept="3EZMnI" id="7wMoUFpfD0L" role="3EZMnx">
@@ -456,7 +464,6 @@
     </node>
   </node>
   <node concept="24kQdi" id="7wMoUFpfEA7">
-    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:7wMoUFpfDgt" resolve="While" />
     <node concept="3EZMnI" id="7wMoUFpfEAc" role="2wV5jI">
       <node concept="3EZMnI" id="7wMoUFpfEAj" role="3EZMnx">
@@ -806,17 +813,9 @@
     <property role="3GE5qa" value="expressions.func.class" />
     <ref role="1XX52x" to="b5gf:3YRSzjH_efC" resolve="ClassCallFunction" />
     <node concept="3EZMnI" id="3YRSzjI5Sp5" role="2wV5jI">
-      <node concept="1iCGBv" id="3YRSzjI5Sph" role="3EZMnx">
-        <ref role="1NtTu8" to="b5gf:3YRSzjI5Spc" resolve="object" />
-        <node concept="1sVBvm" id="3YRSzjI5Spj" role="1sWHZn">
-          <node concept="3F0A7n" id="3YRSzjI5Spt" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="3YRSzjI5Sp_" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
+      <node concept="3F2HdR" id="10qumxRBslD" role="3EZMnx">
+        <ref role="1NtTu8" to="b5gf:10qumxRATBG" resolve="object" />
+        <node concept="l2Vlx" id="10qumxRBslF" role="2czzBx" />
       </node>
       <node concept="1iCGBv" id="3YRSzjI5SpS" role="3EZMnx">
         <ref role="1NtTu8" to="b5gf:3YRSzjH_fnC" resolve="func" />

@@ -93,7 +93,6 @@
   </registry>
   <node concept="2S6QgY" id="2u8r5d7zdeY">
     <property role="TrG5h" value="ExpressionEvaluation" />
-    <property role="3GE5qa" value="basic" />
     <ref role="2ZfgGC" to="b5gf:40Wy3B2Vs$$" resolve="ExpressionStatementContent" />
     <node concept="2S6ZIM" id="2u8r5d7zdeZ" role="2ZfVej">
       <node concept="3clFbS" id="2u8r5d7zdf0" role="2VODD2">
@@ -116,7 +115,7 @@
               <node concept="2OqwBi" id="2u8r5d7zs4w" role="37wK5m">
                 <node concept="2Sf5sV" id="2u8r5d7zrUo" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2u8r5d7zsvg" role="2OqNvi">
-                  <ref role="3Tt5mk" to="b5gf:40Wy3B2Vs$B" resolve="expr" />
+                  <ref role="3Tt5mk" to="b5gf:40Wy3B2Vs$B" resolve="expression" />
                 </node>
               </node>
             </node>
