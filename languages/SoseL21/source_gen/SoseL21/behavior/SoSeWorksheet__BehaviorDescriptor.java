@@ -26,8 +26,9 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<Iterable<SNode>> integers_id5nad63GE9xs = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("integers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GE9xs").build();
   public static final SMethod<Iterable<SNode>> booleans_id5nad63GE9yQ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("booleans").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GE9yQ").build();
+  public static final SMethod<List<SNode>> getNodes_idd58kCZRj__ = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getNodes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("d58kCZRj__").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(integers_id5nad63GE9xs, booleans_id5nad63GE9yQ);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(integers_id5nad63GE9xs, booleans_id5nad63GE9yQ, getNodes_idd58kCZRj__);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -37,6 +38,9 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static Iterable<SNode> booleans_id5nad63GE9yQ(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$WUQ2), CONCEPTS.Boolean$m_);
+  }
+  /*package*/ static List<SNode> getNodes_idd58kCZRj__(@NotNull SNode __thisNode__) {
+    return SLinkOperations.getChildren(((SNode) __thisNode__), LINKS.contents$WUQ2);
   }
 
   /*package*/ SoSeWorksheet__BehaviorDescriptor() {
@@ -58,6 +62,8 @@ public final class SoSeWorksheet__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((Iterable<SNode>) integers_id5nad63GE9xs(node));
       case 1:
         return (T) ((Iterable<SNode>) booleans_id5nad63GE9yQ(node));
+      case 2:
+        return (T) ((List<SNode>) getNodes_idd58kCZRj__(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

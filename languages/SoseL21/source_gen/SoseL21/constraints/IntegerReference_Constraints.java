@@ -87,6 +87,12 @@ public class IntegerReference_Constraints extends BaseConstraintsDescriptor {
                   nodes = Sequence.fromIterable(nodes).concat(Sequence.fromIterable(ClassConstructor__BehaviorDescriptor.getNodes_id5nad63GPZ4Z.invoke(thisClassConstructor)));
                 }
               }
+              {
+                final SNode thisSoSeWorksheet = getBackNode;
+                if (SNodeOperations.isInstanceOf(thisSoSeWorksheet, CONCEPTS.SoSeWorksheet$t7)) {
+                  nodes = Sequence.fromIterable(nodes).concat(ListSequence.fromList(SoSeWorksheet__BehaviorDescriptor.getNodes_idd58kCZRj__.invoke(thisSoSeWorksheet)));
+                }
+              }
               getBackNode = SNodeOperations.getParent(getBackNode);
             } while ((getBackNode != null));
             return ListScope.forNamedElements(SNodeOperations.ofConcept(nodes, CONCEPTS.Integer$xv));

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:d188b94a-1051-47f4-9004-a043b40fbb87(SoseL21.plugin)/2462909142199629722">
+    <file name="SoselValue.java">
+      <node id="626092962575066562" at="9,33,10,24" concept="2" />
+      <node id="626092962575067343" at="10,24,11,25" concept="2" />
+      <node id="626092962575069443" at="14,36,15,27" concept="2" />
+      <node id="626092962575070272" at="15,27,16,28" concept="2" />
+      <node id="9132607334524481791" at="20,27,21,22" concept="8" />
+      <node id="3355169069274933924" at="22,12,23,49" concept="7" />
+      <node id="3355169069274618302" at="23,49,24,38" concept="2" />
+      <node id="2462909142199237366" at="24,38,25,0" concept="9" />
+      <node id="9132607334524483483" at="25,0,26,22" concept="8" />
+      <node id="626092962574014298" at="31,0,32,0" concept="10" trace="boolValue" />
+      <node id="626092962574708419" at="33,38,34,26" concept="2" />
+      <node id="626092962574708423" at="34,26,35,27" concept="2" />
+      <node id="626092962575097570" at="35,27,36,26" concept="2" />
+      <node id="626092962574709122" at="39,42,40,30" concept="2" />
+      <node id="626092962574709847" at="40,30,41,31" concept="2" />
+      <node id="626092962575097849" at="41,31,42,29" concept="2" />
+      <node id="626092962574347532" at="44,0,45,0" concept="10" trace="isCalling" />
+      <node id="9132607334524478378" at="46,28,47,23" concept="8" />
+      <node id="2462909142199226339" at="48,12,49,39" concept="2" />
+      <node id="2462909142199226335" at="49,39,50,0" concept="9" />
+      <node id="9132607334524480062" at="50,0,51,23" concept="8" />
+      <node id="7683169211584703416" at="54,0,55,0" concept="10" trace="intValue" />
+      <node id="3355169069274530852" at="59,28,60,49" concept="7" />
+      <node id="3355169069274530859" at="60,49,61,30" concept="2" />
+      <node id="3355169069274530871" at="64,31,65,24" concept="2" />
+      <node id="2462909142198710336" at="68,30,69,45" concept="7" />
+      <node id="3355169069274530882" at="69,45,70,23" concept="2" />
+      <node id="3355169069274530895" at="73,34,74,19" concept="2" />
+      <node id="3355169069274530904" at="77,47,78,45" concept="7" />
+      <node id="3355169069274530912" at="78,45,79,26" concept="2" />
+      <node id="3355169069274530927" at="82,35,83,45" concept="7" />
+      <node id="3355169069274530935" at="83,45,84,30" concept="7" />
+      <node id="3355169069274530942" at="84,30,85,20" concept="8" />
+      <node id="3355169069274530955" at="88,20,89,34" concept="2" />
+      <node id="3355169069274530960" at="89,34,90,34" concept="2" />
+      <node id="3355169069274530965" at="90,34,91,62" concept="7" />
+      <node id="3355169069274530974" at="91,62,92,28" concept="2" />
+      <node id="3355169069274530985" at="98,26,99,47" concept="7" />
+      <node id="3355169069274530993" at="99,47,100,28" concept="2" />
+      <node id="3355169069274530999" at="100,28,101,15" concept="8" />
+      <node id="3355169069274531007" at="104,35,105,30" concept="2" />
+      <node id="3355169069274531022" at="107,7,108,45" concept="7" />
+      <node id="3355169069274531030" at="108,45,109,26" concept="2" />
+      <node id="3355169069274531051" at="114,35,115,30" concept="8" />
+      <node id="3355169069274531065" at="117,7,118,18" concept="8" />
+      <node id="3355169069274531074" at="121,25,122,21" concept="2" />
+      <node id="3355169069274531078" at="122,21,123,47" concept="7" />
+      <node id="3355169069274531085" at="123,47,124,22" concept="2" />
+      <node id="3355169069274531090" at="124,22,125,21" concept="2" />
+      <node id="3355169069274530836" at="127,0,128,0" concept="3" trace="values" />
+      <node id="3355169069274530842" at="128,0,129,0" concept="3" trace="params" />
+      <node id="3355169069274530869" at="64,0,67,0" concept="6" trace="removeValue#()V" />
+      <node id="3355169069274530893" at="73,0,76,0" concept="6" trace="stopValuesCall#()V" />
+      <node id="3355169069274531005" at="103,45,106,9" concept="5" />
+      <node id="3355169069274531049" at="113,45,116,9" concept="5" />
+      <node id="626092962575066351" at="9,0,13,0" concept="11" trace="addValue#()V" />
+      <node id="626092962575069130" at="14,0,18,0" concept="11" trace="removeValue#()V" />
+      <node id="9132607334524479722" at="48,10,52,5" concept="0" />
+      <node id="3355169069274530850" at="59,0,63,0" concept="6" trace="addValue#()V" />
+      <node id="3355169069274530880" at="68,0,72,0" concept="6" trace="valuesCall#()V" />
+      <node id="3355169069274530902" at="77,0,81,0" concept="6" trace="setParam#(Ljava/lang/String;null)V" />
+      <node id="9132607334524482595" at="22,10,27,5" concept="0" />
+      <node id="626092962574708416" at="33,0,38,0" concept="11" trace="allValuesCall#()V" />
+      <node id="626092962574708948" at="39,0,44,0" concept="11" trace="stopAllValuesCall#()V" />
+      <node id="3355169069274530925" at="82,0,87,0" concept="6" trace="getParam#(Ljava/lang/String;)null" />
+      <node id="3355169069274530983" at="97,62,102,7" concept="5" />
+      <node id="3355169069274531003" at="102,7,107,7" concept="4" />
+      <node id="3355169069274531047" at="112,35,117,7" concept="4" />
+      <node id="3355169069274622564" at="88,0,94,0" concept="1" trace="Value#()V" />
+      <node id="3355169069274531072" at="121,0,127,0" concept="6" trace="empty#()V" />
+      <node id="626092962574015706" at="45,43,52,5" concept="5" />
+      <node id="7683169211584703551" at="19,42,27,5" concept="5" />
+      <node id="3355169069274531045" at="112,0,120,0" concept="6" trace="getValue#(Ljava/lang/String;)null" />
+      <node id="626092962574015533" at="45,0,54,0" concept="11" trace="findBool#()LSoseL21/plugin/SoselValue/Value;" />
+      <node id="7683169211584703511" at="19,0,29,0" concept="11" trace="findInt#()LSoseL21/plugin/SoselValue/Value;" />
+      <node id="3355169069274530981" at="97,0,111,0" concept="6" trace="setValue#(ZLjava/lang/String;null)V" />
+      <scope id="7683169211584703553" at="20,27,21,22" />
+      <scope id="626092962574015708" at="46,28,47,23" />
+      <scope id="3355169069274530870" at="64,31,65,24" />
+      <scope id="3355169069274530894" at="73,34,74,19" />
+      <scope id="3355169069274531006" at="104,35,105,30" />
+      <scope id="3355169069274531050" at="114,35,115,30" />
+      <scope id="626092962575066354" at="9,33,11,25" />
+      <scope id="626092962575069133" at="14,36,16,28" />
+      <scope id="3355169069274530851" at="59,28,61,30">
+        <var name="toAdd" id="3355169069274530853" />
+      </scope>
+      <scope id="3355169069274530881" at="68,30,70,23">
+        <var name="map" id="2462909142198710337" />
+      </scope>
+      <scope id="3355169069274530903" at="77,47,79,26">
+        <var name="map" id="3355169069274530905" />
+      </scope>
+      <scope id="626092962574708418" at="33,38,36,26" />
+      <scope id="626092962574708951" at="39,42,42,29" />
+      <scope id="9132607334524479723" at="48,12,51,23" />
+      <scope id="3355169069274530869" at="64,0,67,0" />
+      <scope id="3355169069274530893" at="73,0,76,0" />
+      <scope id="3355169069274530926" at="82,35,85,20">
+        <var name="map" id="3355169069274530928" />
+        <var name="paramT" id="3355169069274530936" />
+      </scope>
+      <scope id="3355169069274530984" at="98,26,101,15">
+        <var name="map" id="3355169069274530986" />
+      </scope>
+      <scope id="3355169069274531004" at="103,45,106,9" />
+      <scope id="3355169069274531048" at="113,45,116,9" />
+      <scope id="626092962575066351" at="9,0,13,0" />
+      <scope id="626092962575069130" at="14,0,18,0" />
+      <scope id="9132607334524482596" at="22,12,26,22">
+        <var name="val1" id="3355169069274933930" />
+      </scope>
+      <scope id="3355169069274530850" at="59,0,63,0" />
+      <scope id="3355169069274530880" at="68,0,72,0" />
+      <scope id="3355169069274530902" at="77,0,81,0">
+        <var name="key" id="3355169069274530920" />
+        <var name="value" id="3355169069274530922" />
+      </scope>
+      <scope id="3355169069274622567" at="88,20,92,28">
+        <var name="initValue" id="3355169069274530966" />
+      </scope>
+      <scope id="3355169069274531073" at="121,25,125,21">
+        <var name="map" id="3355169069274531079" />
+      </scope>
+      <scope id="626092962574708416" at="33,0,38,0" />
+      <scope id="626092962574708948" at="39,0,44,0" />
+      <scope id="3355169069274530925" at="82,0,87,0">
+        <var name="key" id="3355169069274530946" />
+      </scope>
+      <scope id="3355169069274531003" at="102,7,107,7">
+        <var name="map" id="3355169069274531017" />
+      </scope>
+      <scope id="3355169069274531047" at="112,35,117,7">
+        <var name="map" id="3355169069274531060" />
+      </scope>
+      <scope id="3355169069274622564" at="88,0,94,0" />
+      <scope id="3355169069274531046" at="112,35,118,18" />
+      <scope id="3355169069274531072" at="121,0,127,0" />
+      <scope id="626092962574015536" at="45,43,52,5" />
+      <scope id="7683169211584703514" at="19,42,27,5" />
+      <scope id="3355169069274531045" at="112,0,120,0">
+        <var name="key" id="3355169069274531069" />
+      </scope>
+      <scope id="626092962574015533" at="45,0,54,0" />
+      <scope id="7683169211584703511" at="19,0,29,0" />
+      <scope id="3355169069274530982" at="97,62,109,26">
+        <var name="map" id="3355169069274531023" />
+      </scope>
+      <scope id="3355169069274530981" at="97,0,111,0">
+        <var name="judge" id="2462909142198521355" />
+        <var name="key" id="3355169069274531038" />
+        <var name="value" id="3355169069274531040" />
+      </scope>
+      <unit id="3355169069273406854" at="56,0,131,0" name="SoseL21.plugin.SoselValue$Value" />
+      <unit id="2462909142199629722" at="8,0,133,0" name="SoseL21.plugin.SoselValue" />
+    </file>
+  </root>
+</debug-info>
+
