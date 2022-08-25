@@ -120,6 +120,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="JX4BgkJROe">
+    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:JX4BgkJRO2" resolve="SoSeWorksheet" />
     <node concept="3EZMnI" id="JX4BgkJSy9" role="2wV5jI">
       <node concept="3EZMnI" id="JX4BgkJSyg" role="3EZMnx">
@@ -228,6 +229,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="40Wy3B2Vs$K">
+    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:40Wy3B2Vs$$" resolve="ExpressionStatementContent" />
     <node concept="3EZMnI" id="5aF4_VmsF4P" role="2wV5jI">
       <node concept="1kIj98" id="5aF4_VmsF4W" role="3EZMnx">
@@ -393,6 +395,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7wMoUFpfyRs">
+    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:7wMoUFpeTyL" resolve="For" />
     <node concept="3EZMnI" id="7wMoUFpfz3I" role="2wV5jI">
       <node concept="3EZMnI" id="7wMoUFpfz3P" role="3EZMnx">
@@ -431,6 +434,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7wMoUFpfz6t">
+    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:7wMoUFpfz67" resolve="IfElse" />
     <node concept="3EZMnI" id="7wMoUFpfD0o" role="2wV5jI">
       <node concept="3EZMnI" id="7wMoUFpfD0L" role="3EZMnx">
@@ -464,6 +468,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7wMoUFpfEA7">
+    <property role="3GE5qa" value="basic" />
     <ref role="1XX52x" to="b5gf:7wMoUFpfDgt" resolve="While" />
     <node concept="3EZMnI" id="7wMoUFpfEAc" role="2wV5jI">
       <node concept="3EZMnI" id="7wMoUFpfEAj" role="3EZMnx">

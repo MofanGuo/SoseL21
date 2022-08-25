@@ -58,12 +58,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
-        <child id="1068581517676" name="expression" index="3cqZAk" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -77,13 +71,10 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
-      <concept id="6738154313879680265" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childNode" flags="nn" index="2H4GUG" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -118,9 +109,6 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -879,45 +867,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="3G06KIUJHzq">
-    <property role="3GE5qa" value="test" />
-    <ref role="1M2myG" to="b5gf:3G06KIUJHb2" resolve="Assertion" />
-    <node concept="9SLcT" id="3G06KIUJHzr" role="9SGkU">
-      <node concept="3clFbS" id="3G06KIUJHzs" role="2VODD2">
-        <node concept="Jncv_" id="3G06KIUJHBq" role="3cqZAp">
-          <ref role="JncvD" to="b5gf:7wMoUFpgRu0" resolve="CallFunction" />
-          <node concept="2H4GUG" id="3G06KIUJHC2" role="JncvB" />
-          <node concept="3clFbS" id="3G06KIUJHBs" role="Jncv$">
-            <node concept="3cpWs8" id="3G06KIUJHHz" role="3cqZAp">
-              <node concept="3cpWsn" id="3G06KIUJHHA" role="3cpWs9">
-                <property role="TrG5h" value="function" />
-                <node concept="3Tqbb2" id="3G06KIUJHHy" role="1tU5fm">
-                  <ref role="ehGHo" to="b5gf:7wMoUFpfEE$" resolve="Function" />
-                </node>
-                <node concept="2OqwBi" id="3G06KIUJI0Z" role="33vP2m">
-                  <node concept="Jnkvi" id="3G06KIUJHMS" role="2Oq$k0">
-                    <ref role="1M0zk5" node="3G06KIUJHBt" resolve="callFunction" />
-                  </node>
-                  <node concept="3TrEf2" id="3G06KIUJIrO" role="2OqNvi">
-                    <ref role="3Tt5mk" to="b5gf:7wMoUFpgRu5" resolve="func" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="JncvC" id="3G06KIUJHBt" role="JncvA">
-            <property role="TrG5h" value="callFunction" />
-            <node concept="2jxLKc" id="3G06KIUJHBu" role="1tU5fm" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="3G06KIUJJNa" role="3cqZAp">
-          <node concept="3clFbT" id="3G06KIUJJSo" role="3cqZAk">
-            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

@@ -52,6 +52,7 @@
   <node concept="PlHQZ" id="JX4BgkJRNZ">
     <property role="EcuMT" value="863866993298603263" />
     <property role="TrG5h" value="IStatementContent" />
+    <property role="3GE5qa" value="basic" />
     <node concept="PrWs8" id="JX4BgkJRO0" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -60,6 +61,7 @@
     <property role="EcuMT" value="863866993298603266" />
     <property role="TrG5h" value="SoSeWorksheet" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="JX4BgkJRO3" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -134,6 +136,7 @@
   <node concept="1TIwiD" id="40Wy3B2UoT4">
     <property role="EcuMT" value="4628724298694626884" />
     <property role="TrG5h" value="Variable" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="40Wy3B2UoT5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -145,6 +148,7 @@
   <node concept="1TIwiD" id="40Wy3B2Vs$$">
     <property role="EcuMT" value="4628724298694904100" />
     <property role="TrG5h" value="ExpressionStatementContent" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="40Wy3B2Vs$_" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -334,6 +338,7 @@
     <property role="EcuMT" value="8661094618827036849" />
     <property role="TrG5h" value="For" />
     <property role="34LRSv" value="for" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpeTyM" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -370,6 +375,7 @@
   <node concept="1TIwiD" id="7wMoUFpfz67">
     <property role="EcuMT" value="8661094618827207047" />
     <property role="TrG5h" value="IfElse" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpfz68" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -399,6 +405,7 @@
   <node concept="1TIwiD" id="7wMoUFpfDgt">
     <property role="EcuMT" value="8661094618827232285" />
     <property role="TrG5h" value="While" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpfDgu" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />

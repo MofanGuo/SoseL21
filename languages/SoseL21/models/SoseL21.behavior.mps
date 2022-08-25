@@ -121,6 +121,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="2u8r5d7IBSp">
+    <property role="3GE5qa" value="basic" />
     <ref role="13h7C2" to="b5gf:JX4BgkJRO2" resolve="SoSeWorksheet" />
     <node concept="13i0hz" id="5nad63GE9xs" role="13h7CS">
       <property role="TrG5h" value="integers" />
@@ -203,6 +204,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7wMoUFpeTz7">
+    <property role="3GE5qa" value="basic" />
     <ref role="13h7C2" to="b5gf:7wMoUFpeTyL" resolve="For" />
     <node concept="13i0hz" id="5nad63GG6Qy" role="13h7CS">
       <property role="TrG5h" value="getNodes" />
@@ -282,6 +284,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7wMoUFpfzjj">
+    <property role="3GE5qa" value="basic" />
     <ref role="13h7C2" to="b5gf:7wMoUFpfz67" resolve="IfElse" />
     <node concept="13i0hz" id="5nad63GGvOZ" role="13h7CS">
       <property role="TrG5h" value="getNodes" />
@@ -335,6 +338,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7wMoUFpfDgz">
+    <property role="3GE5qa" value="basic" />
     <ref role="13h7C2" to="b5gf:7wMoUFpfDgt" resolve="While" />
     <node concept="13i0hz" id="5nad63GGAer" role="13h7CS">
       <property role="TrG5h" value="getNodes" />
