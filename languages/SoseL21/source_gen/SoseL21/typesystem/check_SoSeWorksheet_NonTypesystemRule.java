@@ -27,9 +27,9 @@ public class check_SoSeWorksheet_NonTypesystemRule extends AbstractNonTypesystem
         return ListSequence.fromList(SNodeOperations.getChildren(it)).getElement(0);
       }
     });
-    Iterable<SNode> ref = SNodeOperations.ofConcept(expr, CONCEPTS.IntegerReference$_E);
-    ref = Sequence.fromIterable(ref).concat(Sequence.fromIterable(SNodeOperations.ofConcept(expr, CONCEPTS.BooleanReference$SX)));
-    if (Sequence.fromIterable(ref).count() > 1) {
+    Iterable<SNode> ref = Sequence.fromIterable(SNodeOperations.ofConcept(expr, CONCEPTS.IntegerReference$_E)).concat(Sequence.fromIterable(SNodeOperations.ofConcept(expr, CONCEPTS.BooleanReference$SX)));
+    int refSize = Sequence.fromIterable(ref).count();
+    if (refSize > 1) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(Sequence.fromIterable(ref).last(), "should only be referenced once", "r:027d9010-5592-439a-a74a-944bd86d347a(SoseL21.typesystem)", "8661094618824227565", null, errorTarget);

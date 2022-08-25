@@ -50,7 +50,7 @@ public class BooleanReference_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_rbf52i_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.BooleanReference$SX, LINKS.ref$ZtkH);
+      super((SAbstractConcept) CONCEPTS.BooleanReference$SX, LINKS.reference$ZtkH);
     }
     @NotNull
     @Override
@@ -92,6 +92,6 @@ public class BooleanReference_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink ref$ZtkH = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, 0x403c8839c2e7a258L, "ref");
+    /*package*/ static final SReferenceLink reference$ZtkH = MetaAdapterFactory.getReferenceLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, 0x403c8839c2e7a258L, "reference");
   }
 }

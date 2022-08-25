@@ -137,7 +137,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BooleanReference:
         if (props_BooleanReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, 0x403c8839c2e7a258L, "ref", "", "");
+          cpb.presentationByReference(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x550d21c8a2e4a3eL, 0x403c8839c2e7a258L, "reference", "", "");
           props_BooleanReference = cpb.create();
         }
         return props_BooleanReference;
@@ -172,6 +172,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Declaration:
         if (props_Declaration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Declaration");
           props_Declaration = cpb.create();
         }
         return props_Declaration;
@@ -267,6 +268,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.IntegerExpression:
         if (props_IntegerExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("IntegerExpression");
           props_IntegerExpression = cpb.create();
         }
         return props_IntegerExpression;
@@ -287,7 +289,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.IntegerReference:
         if (props_IntegerReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, 0x403c8839c2e84ddeL, "ref", "", "");
+          cpb.presentationByReference(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0xbfd127414c2cb91L, 0x403c8839c2e84ddeL, "reference", "", "");
           props_IntegerReference = cpb.create();
         }
         return props_IntegerReference;
@@ -343,6 +345,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Parameter:
         if (props_Parameter == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
           props_Parameter = cpb.create();
         }
         return props_Parameter;
@@ -377,6 +380,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Return:
         if (props_Return == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Return");
           props_Return = cpb.create();
         }
         return props_Return;

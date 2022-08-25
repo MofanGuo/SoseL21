@@ -52,6 +52,7 @@
   <node concept="PlHQZ" id="JX4BgkJRNZ">
     <property role="EcuMT" value="863866993298603263" />
     <property role="TrG5h" value="IStatementContent" />
+    <property role="3GE5qa" value="basic" />
     <node concept="PrWs8" id="JX4BgkJRO0" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -60,6 +61,7 @@
     <property role="EcuMT" value="863866993298603266" />
     <property role="TrG5h" value="SoSeWorksheet" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="JX4BgkJRO3" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -105,7 +107,7 @@
     <ref role="1TJDcQ" node="40Wy3B2TFR$" resolve="IntegerExpression" />
     <node concept="1TJgyj" id="40Wy3B2U4Ru" role="1TKVEi">
       <property role="IQ2ns" value="4628724298694544862" />
-      <property role="20kJfa" value="ref" />
+      <property role="20kJfa" value="reference" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JX4BgkKf7R" resolve="Integer" />
     </node>
@@ -117,7 +119,7 @@
     <ref role="1TJDcQ" node="40Wy3B2TFRz" resolve="BooleanExpression" />
     <node concept="1TJgyj" id="40Wy3B2TU9o" role="1TKVEi">
       <property role="IQ2ns" value="4628724298694500952" />
-      <property role="20kJfa" value="ref" />
+      <property role="20kJfa" value="reference" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JX4BgkKqT6" resolve="Boolean" />
     </node>
@@ -140,12 +142,12 @@
     <property role="EcuMT" value="4628724298694442468" />
     <property role="3GE5qa" value="expressions.integer" />
     <property role="TrG5h" value="IntegerExpression" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="lgOxMab_X9" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="40Wy3B2UoT4">
     <property role="EcuMT" value="4628724298694626884" />
     <property role="TrG5h" value="Variable" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="40Wy3B2UoT5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -157,6 +159,7 @@
   <node concept="1TIwiD" id="40Wy3B2Vs$$">
     <property role="EcuMT" value="4628724298694904100" />
     <property role="TrG5h" value="ExpressionStatementContent" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="40Wy3B2Vs$_" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -164,7 +167,7 @@
     <node concept="1TJgyj" id="40Wy3B2Vs$B" role="1TKVEi">
       <property role="IQ2ns" value="4628724298694904103" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="lgOxMab_X9" resolve="Expression" />
     </node>
@@ -180,14 +183,14 @@
     <node concept="1TJgyj" id="5aF4_Vms5gm" role="1TKVEi">
       <property role="IQ2ns" value="5956875130661524502" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ref" />
+      <property role="20kJfa" value="reference" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JX4BgkKGIh" resolve="IntegerReference" />
     </node>
     <node concept="1TJgyj" id="5aF4_Vms5go" role="1TKVEi">
       <property role="IQ2ns" value="5956875130661524504" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value" />
+      <property role="20kJfa" value="intValue" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="40Wy3B2TFR$" resolve="IntegerExpression" />
     </node>
@@ -203,14 +206,14 @@
     <node concept="1TJgyj" id="5aF4_VmsX$2" role="1TKVEi">
       <property role="IQ2ns" value="5956875130661755138" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ref" />
+      <property role="20kJfa" value="reference" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="lgOxMab$CY" resolve="BooleanReference" />
     </node>
     <node concept="1TJgyj" id="5aF4_VmsX$4" role="1TKVEi">
       <property role="IQ2ns" value="5956875130661755140" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value" />
+      <property role="20kJfa" value="booleanValue" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="40Wy3B2TFRz" resolve="BooleanExpression" />
     </node>
@@ -282,7 +285,7 @@
     <node concept="1TJgyj" id="5aF4_VmuMyC" role="1TKVEi">
       <property role="IQ2ns" value="5956875130662234280" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="paren" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="40Wy3B2TFR$" resolve="IntegerExpression" />
     </node>
@@ -357,6 +360,7 @@
     <property role="EcuMT" value="8661094618827036849" />
     <property role="TrG5h" value="For" />
     <property role="34LRSv" value="for" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpeTyM" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -378,7 +382,7 @@
     <node concept="1TJgyj" id="7wMoUFpeTyY" role="1TKVEi">
       <property role="IQ2ns" value="8661094618827036862" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="increment" />
+      <property role="20kJfa" value="addUp" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JX4BgkJRNZ" resolve="IStatementContent" />
     </node>
@@ -393,6 +397,7 @@
   <node concept="1TIwiD" id="7wMoUFpfz67">
     <property role="EcuMT" value="8661094618827207047" />
     <property role="TrG5h" value="IfElse" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpfz68" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -422,6 +427,7 @@
   <node concept="1TIwiD" id="7wMoUFpfDgt">
     <property role="EcuMT" value="8661094618827232285" />
     <property role="TrG5h" value="While" />
+    <property role="3GE5qa" value="basic" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpfDgu" role="PzmwI">
       <ref role="PrY4T" node="JX4BgkJRNZ" resolve="IStatementContent" />
@@ -485,7 +491,6 @@
     <property role="EcuMT" value="8661094618827238688" />
     <property role="3GE5qa" value="expressions.func" />
     <property role="TrG5h" value="Parameter" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7wMoUFpfEOx" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -495,14 +500,12 @@
     <property role="EcuMT" value="8661094618827238915" />
     <property role="3GE5qa" value="expressions.func" />
     <property role="TrG5h" value="Return" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7wMoUFpfXo2">
     <property role="EcuMT" value="8661094618827314690" />
     <property role="3GE5qa" value="expressions.func" />
     <property role="TrG5h" value="Declaration" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7wMoUFpfXpL">

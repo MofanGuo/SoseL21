@@ -200,14 +200,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createRefNode_2() {
-    SingleRoleCellProvider provider = new incrementSingleRoleHandler_g7vg8h_f0a(myNode, LINKS.increment$GELQ, getEditorContext());
+    SingleRoleCellProvider provider = new addUpSingleRoleHandler_g7vg8h_f0a(myNode, LINKS.addUp$GELQ, getEditorContext());
     return provider.createCell();
   }
-  private static class incrementSingleRoleHandler_g7vg8h_f0a extends SingleRoleCellProvider {
+  private static class addUpSingleRoleHandler_g7vg8h_f0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public incrementSingleRoleHandler_g7vg8h_f0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public addUpSingleRoleHandler_g7vg8h_f0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -220,8 +220,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
     protected EditorCell createChildCell(SNode child) {
       EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.increment$GELQ, child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.increment$GELQ, child));
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), LINKS.addUp$GELQ, child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), LINKS.addUp$GELQ, child));
       installCellInfo(child, editorCell, false);
       return editorCell;
     }
@@ -233,16 +233,16 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
         editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
       }
       if (editorCell.getSRole() == null) {
-        editorCell.setSRole(LINKS.increment$GELQ);
+        editorCell.setSRole(LINKS.addUp$GELQ);
       }
     }
     @Override
     protected EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.increment$GELQ));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), LINKS.addUp$GELQ));
       try {
         EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_increment");
+        editorCell.setCellId("empty_addUp");
         installCellInfo(null, editorCell, true);
         setCellContext(editorCell);
         return editorCell;
@@ -251,7 +251,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       }
     }
     protected String getNoTargetText() {
-      return "<no increment>";
+      return "<no addUp>";
     }
   }
   private EditorCell createConstant_2() {
@@ -344,7 +344,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   private static final class LINKS {
     /*package*/ static final SContainmentLink int$G$dq = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98b7L, "int");
     /*package*/ static final SContainmentLink bool$G_9u = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98bbL, "bool");
-    /*package*/ static final SContainmentLink increment$GELQ = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98beL, "increment");
+    /*package*/ static final SContainmentLink addUp$GELQ = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98beL, "addUp");
     /*package*/ static final SContainmentLink body$GFHU = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad93b98b1L, 0x783263aad93b98c2L, "body");
   }
 

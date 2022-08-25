@@ -20,21 +20,21 @@
         <child id="4251427785429419574" name="assertion" index="21JLOX" />
       </concept>
       <concept id="4628724298694904100" name="SoseL21.structure.ExpressionStatementContent" flags="ng" index="22Ok4t">
-        <child id="4628724298694904103" name="expression" index="22Ok4u" />
+        <child id="4628724298694904103" name="expr" index="22Ok4u" />
       </concept>
       <concept id="5956875130662234260" name="SoseL21.structure.IntegerLetter" flags="ng" index="24O3Fa">
         <property id="5956875130662234261" name="value" index="24O3Fb" />
       </concept>
       <concept id="5956875130662234279" name="SoseL21.structure.ParenExpression" flags="ng" index="24O3FT">
-        <child id="5956875130662234280" name="expression" index="24O3FQ" />
+        <child id="5956875130662234280" name="paren" index="24O3FQ" />
       </concept>
       <concept id="5956875130661755135" name="SoseL21.structure.AssignBoolean" flags="ng" index="24QcEx">
-        <child id="5956875130661755140" name="value" index="24QcHq" />
-        <child id="5956875130661755138" name="ref" index="24QcHs" />
+        <child id="5956875130661755140" name="booleanValue" index="24QcHq" />
+        <child id="5956875130661755138" name="reference" index="24QcHs" />
       </concept>
       <concept id="5956875130661524499" name="SoseL21.structure.AssignInteger" flags="ng" index="24QOpd">
-        <child id="5956875130661524504" name="value" index="24QOp6" />
-        <child id="5956875130661524502" name="ref" index="24QOp8" />
+        <child id="5956875130661524504" name="intValue" index="24QOp6" />
+        <child id="5956875130661524502" name="reference" index="24QOp8" />
       </concept>
       <concept id="5956875130661831961" name="SoseL21.structure.BinaryInteger" flags="ng" index="24Rxt7">
         <child id="5956875130661832670" name="second" index="24Rxm0" />
@@ -43,7 +43,7 @@
       <concept id="5956875130661863441" name="SoseL21.structure.Multiply" flags="ng" index="24RD9f" />
       <concept id="5956875130661863438" name="SoseL21.structure.Plus" flags="ng" index="24RD9g" />
       <concept id="383036988345698878" name="SoseL21.structure.BooleanReference" flags="ng" index="2fvDwy">
-        <reference id="4628724298694500952" name="ref" index="22QMDx" />
+        <reference id="4628724298694500952" name="reference" index="22QMDx" />
       </concept>
       <concept id="3829283723931390594" name="SoseL21.structure.Initializor" flags="ng" index="oesJ0">
         <reference id="3829283723931390602" name="class" index="oesJ8" />
@@ -56,14 +56,14 @@
         <property id="6930719454210533900" name="value" index="3ydnqj" />
       </concept>
       <concept id="863866993298819985" name="SoseL21.structure.IntegerReference" flags="ng" index="vfXB_">
-        <reference id="4628724298694544862" name="ref" index="22PcnB" />
+        <reference id="4628724298694544862" name="reference" index="22PcnB" />
       </concept>
       <concept id="863866993298603266" name="SoseL21.structure.SoSeWorksheet" flags="ng" index="vgAXQ">
         <child id="863866993298603269" name="contents" index="vgAXL" />
       </concept>
       <concept id="8661094618827036849" name="SoseL21.structure.For" flags="ng" index="2x2vGr">
         <child id="8661094618827036859" name="bool" index="2x2vGh" />
-        <child id="8661094618827036862" name="increment" index="2x2vGk" />
+        <child id="8661094618827036862" name="addUp" index="2x2vGk" />
         <child id="8661094618827036855" name="int" index="2x2vGt" />
         <child id="8661094618827036866" name="body" index="2x2vHC" />
       </concept>
@@ -127,14 +127,19 @@
       <property role="TrG5h" value="a1" />
       <property role="3ydnqj" value="1" />
     </node>
-    <node concept="22Ok4t" id="5nad63GLXT5" role="vgAXL">
-      <node concept="24RD9g" id="5nad63GLXTE" role="22Ok4u">
-        <node concept="24O3Fa" id="5nad63GLXTP" role="24Rxm0">
+    <node concept="22Ok4t" id="d58kCZX7oZ" role="vgAXL">
+      <node concept="24RD9g" id="d58kCZX7pb" role="22Ok4u">
+        <node concept="24O3Fa" id="d58kCZX7pm" role="24Rxm0">
           <property role="24O3Fb" value="1" />
         </node>
-        <node concept="vfXB_" id="5nad63GLXTw" role="24Rxm2">
+        <node concept="vfXB_" id="d58kCZX7oX" role="24Rxm2">
           <ref role="22PcnB" node="5nad63GKeGn" resolve="a1" />
         </node>
+      </node>
+    </node>
+    <node concept="22Ok4t" id="d58kD00j$L" role="vgAXL">
+      <node concept="vfXB_" id="d58kD00j$J" role="22Ok4u">
+        <ref role="22PcnB" node="5nad63GKeGn" resolve="a1" />
       </node>
     </node>
     <node concept="22Ok4t" id="5nad63GKeXA" role="vgAXL">
@@ -157,6 +162,16 @@
     <node concept="vfue3" id="3G06KIULFlY" role="vgAXL">
       <property role="TrG5h" value="test_int_2" />
       <property role="3ydnqj" value="2" />
+    </node>
+    <node concept="22Ok4t" id="d58kCZX7jp" role="vgAXL">
+      <node concept="24RD9g" id="d58kCZX7kr" role="22Ok4u">
+        <node concept="24O3Fa" id="d58kCZX7kA" role="24Rxm0">
+          <property role="24O3Fb" value="1" />
+        </node>
+        <node concept="vfXB_" id="d58kCZX7jn" role="24Rxm2">
+          <ref role="22PcnB" node="3G06KIULFlF" resolve="test_int_1" />
+        </node>
+      </node>
     </node>
     <node concept="vfbKM" id="3G06KIULFmk" role="vgAXL">
       <property role="TrG5h" value="test_bool" />

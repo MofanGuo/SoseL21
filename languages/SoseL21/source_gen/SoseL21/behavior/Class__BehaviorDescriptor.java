@@ -13,50 +13,22 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public final class Class__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L, "SoseL21.structure.Class");
 
-  public static final SMethod<SNode> getConstructor_id7wMoUFpg5Be = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getConstructor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("7wMoUFpg5Be").build(SMethodBuilder.createJavaParameter((Class<List<Type>>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> getNodes_id5nad63GPYkh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getNodes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5nad63GPYkh").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConstructor_id7wMoUFpg5Be, getNodes_id5nad63GPYkh);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodes_id5nad63GPYkh);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static SNode getConstructor_id7wMoUFpg5Be(@NotNull SNode __thisNode__, List<Type> sig) {
-    for (SNode state : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.state$nj75))) {
-      {
-        final SNode constructor = state;
-        if (SNodeOperations.isInstanceOf(constructor, CONCEPTS.ClassConstructor$WJ)) {
-          if (ListSequence.fromList(sig).count() != ListSequence.fromList(SLinkOperations.getChildren(constructor, LINKS.params$nbn5)).count()) {
-            continue;
-          }
-          int i = 0;
-          boolean rightSignature = true;
-          for (SNode param : ListSequence.fromList(SLinkOperations.getChildren(constructor, LINKS.params$nbn5))) {
-            if (Parameter__BehaviorDescriptor.getType_id7wMoUFpfEPe.invoke(param) != ListSequence.fromList(sig).getElement(i)) {
-              rightSignature = false;
-            }
-            i++;
-          }
-          if (rightSignature) {
-            return constructor;
-          }
-        }
-      }
-    }
-    return null;
-  }
   /*package*/ static Iterable<SNode> getNodes_id5nad63GPYkh(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.state$nj75);
   }
@@ -77,8 +49,6 @@ public final class Class__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((SNode) getConstructor_id7wMoUFpg5Be(node, (List<Type>) parameters[0]));
-      case 1:
         return (T) ((Iterable<SNode>) getNodes_id5nad63GPYkh(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -109,12 +79,7 @@ public final class Class__BehaviorDescriptor extends BaseBHDescriptor {
     return CONCEPT;
   }
 
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept ClassConstructor$WJ = MetaAdapterFactory.getConcept(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, "SoseL21.structure.ClassConstructor");
-  }
-
   private static final class LINKS {
-    /*package*/ static final SContainmentLink params$nbn5 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad940425eL, 0x783263aad9404264L, "params");
     /*package*/ static final SContainmentLink state$nj75 = MetaAdapterFactory.getContainmentLink(0x553bdaad1cb3493bL, 0xaccb16ef149d741aL, 0x783263aad9404269L, 0x783263aad940426fL, "state");
   }
 }
